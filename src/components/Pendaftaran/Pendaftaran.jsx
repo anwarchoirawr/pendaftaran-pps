@@ -1,7 +1,8 @@
+// Pendaftaran.jsx
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-const brosurImage1 = "/assets/brosur.png";
-const brosurImage2 = "/assets/hero-pondok2.jpg";
+import brosurImage1 from "/src/assets/brosur.png";
+import brosurImage2 from "/src/assets/hero-pondok2.jpg";
 import ImageModal from "./ImageModal";
 import { PlayIcon } from '@heroicons/react/24/solid';
 
@@ -49,13 +50,6 @@ const Pendaftaran = () => {
                 onClick={() => openModal(brosurImage2)}
               />
             </div>
-            <a
-              href="/src/assets/brosur.pdf" // Ganti dengan path brosur yang benar
-              download
-              className="block mt-4 bg-blue-500 text-white px-6 py-2 rounded-md text-center text-2xl"
-            >
-              Download Brosur
-            </a>
             {/* Tombol Daftar SMP */}
             <Link
               to="/formulir-smp"
@@ -168,7 +162,7 @@ const Pendaftaran = () => {
               </button>
               {activeIndex === 5 && (
                 <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
-                  <p>Jadwal ujian akan diumumkan di website dan juga melalui pengumuman resmi pesantren.</p>
+                  <p>Jadwal ujian untuk pendaftaran adalah pada bulan Agustus untuk gelombang pertama, November untuk gelombang kedua, dan Januari untuk gelombang ketiga.</p>
                 </div>
               )}
             </div>
@@ -183,15 +177,16 @@ const Pendaftaran = () => {
               </button>
               {activeIndex === 6 && (
                 <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
-                  <p>Pengumuman hasil seleksi akan diumumkan di website dan melalui kontak yang telah didaftarkan.</p>
+                  <p>Pengumuman hasil seleksi akan diumumkan pada bulan Desember untuk gelombang pertama, Maret untuk gelombang kedua, dan Mei untuk gelombang ketiga.</p>
                 </div>
               )}
             </div>
           </div>
         </div>
       </section>
-      {/* Modal Gambar */}
-      {isModalOpen && <ImageModal imageSrc={modalImage} onClose={closeModal} />}
+      
+      {/* Modal */}
+      <ImageModal isOpen={isModalOpen} onClose={closeModal} imageSrc={modalImage} />
     </main>
   );
 };
