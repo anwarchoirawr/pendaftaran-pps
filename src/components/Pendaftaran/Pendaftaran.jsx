@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import brosurImage1 from "/src/assets/brosur.png";
-import brosurImage2 from "/src/assets/hero-pondok2.jpg";
+const brosurImage1 = "/assets/brosur.png";
+const brosurImage2 = "/assets/hero-pondok2.jpg";
 import ImageModal from "./ImageModal";
 import { PlayIcon } from '@heroicons/react/24/solid';
 

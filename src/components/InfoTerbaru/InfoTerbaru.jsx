@@ -6,19 +6,20 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
 
-import infoImage1 from "/src/assets/brosur.png";
-import infoImage2 from "/src/assets/BBM.jpg";
-import infoImage3 from "/src/assets/assestment nasional.jpg";
-import infoImage4 from "/src/assets/ACL.jpg";
+// Menggunakan jalur absolut untuk file di folder public
+const brosurImage1 = "/assets/brosur.pdf";
+const brosurImage2 = "/assets/hero-pondok2.jpg";
+const brosurImage3 = "/assets/assestment nasional.jpg";
+const brosurImage4 = "/assets/ACL.jpg";
 
 const InfoTerbaru = () => {
   const navigate = useNavigate();
 
   const infos = [
-    { src: infoImage1, alt: "Info 1", description: "Penerimaan Santri Baru", additionalText: "Tahun ajaran 2024/2025", isRegistration: true },
-    { src: infoImage2, alt: "Info 2", description: "BBM", additionalText: "Bersih bersih masjid" },
-    { src: infoImage3, alt: "Info 3", description: "Asesment Nasional", additionalText: "Jenjang Wustho" },
-    { src: infoImage4, alt: "Info 4", description: "Event Kejuaraan" , additionalText: "Alikhlas champion league" },
+    { src: brosurImage1, alt: "Info 1", description: "Penerimaan Santri Baru", additionalText: "Tahun ajaran 2024/2025", isRegistration: true, isPdf: true },
+    { src: brosurImage2, alt: "Info 2", description: "BBM", additionalText: "Bersih bersih masjid" },
+    { src: brosurImage3, alt: "Info 3", description: "Asesment Nasional", additionalText: "Jenjang Wustho" },
+    { src: brosurImage4, alt: "Info 4", description: "Event Kejuaraan", additionalText: "Alikhlas champion league" },
   ];
 
   const handleReadMore = (info) => {
@@ -60,11 +61,21 @@ const InfoTerbaru = () => {
                   <div className="absolute top-0 right-0 m-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded-full">
                     New!
                   </div>
-                  <img
-                    src={info.src}
-                    alt={info.alt}
-                    className="rounded-t-lg w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
+                  {info.isPdf ? (
+                    <a href={info.src} target="_blank" rel="noopener noreferrer">
+                      <img
+                        src="/assets/pdf-icon.png" // Kamu bisa menggunakan ikon PDF sebagai placeholder
+                        alt={info.alt}
+                        className="rounded-t-lg w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </a>
+                  ) : (
+                    <img
+                      src={info.src}
+                      alt={info.alt}
+                      className="rounded-t-lg w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                  )}
                   <div className="p-4">
                     <p className="text-gray-700 dark:text-gray-300 mb-2">
                       {info.description}
