@@ -6,7 +6,6 @@ const FormulirSma = () => {
   const [formData, setFormData] = useState({
     namaAnak: '',
     namaWali: '',
-    umur: '',
     noHpWali: '',
     metodePembayaran: '',
     buktiPembayaran: null,
@@ -69,13 +68,8 @@ const FormulirSma = () => {
     setErrorMessage('');
     setSuccessMessage('');
 
-    if (!formData.namaAnak || !formData.namaWali || !formData.umur || !formData.noHpWali || !formData.metodePembayaran) {
+    if (!formData.namaAnak || !formData.namaWali || !formData.noHpWali || !formData.metodePembayaran) {
       setErrorMessage('Semua field harus diisi');
-      return;
-    }
-
-    if (formData.umur <= 0) {
-      setErrorMessage('Umur harus lebih dari 0');
       return;
     }
 
@@ -87,13 +81,12 @@ const FormulirSma = () => {
     const formDataToSend = new FormData();
     formDataToSend.append('namaAnak', formData.namaAnak);
     formDataToSend.append('namaWali', formData.namaWali);
-    formDataToSend.append('umur', formData.umur);
     formDataToSend.append('noHpWali', formData.noHpWali);
     formDataToSend.append('metodePembayaran', formData.metodePembayaran);
     formDataToSend.append('buktiPembayaran', formData.buktiPembayaran);
 
     try {
-      const response = await fetch('http://localhost/NewPps/server/FormSma.php', {
+      const response = await fetch('http://localhost/pendaftaran-pps/server/FormSma.php', {
         method: 'POST',
         body: formDataToSend,
       });
@@ -211,19 +204,6 @@ const FormulirSma = () => {
           </div>
 
           <div>
-            <label htmlFor="umur" className="block text-sm font-medium text-gray-700">Umur Ananda</label>
-            <input
-              type="number"
-              id="umur"
-              name="umur"
-              value={formData.umur}
-              onChange={handleChange}
-              required
-              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-indigo-500 sm:text-sm"
-            />
-          </div>
-
-          <div>
             <label htmlFor="noHpWali" className="block text-sm font-medium text-gray-700">No. HP Wali</label>
             <input
               type="text"
@@ -246,24 +226,23 @@ const FormulirSma = () => {
               required
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-indigo-500 sm:text-sm"
             >
-              <option value="">Pilih Metode</option>
+              <option value="">Pilih Metode Pembayaran</option>
               <option value="Transfer Bank">Transfer Bank</option>
-              </select>
+              <option value="Tunai">Tunai</option>
+            </select>
           </div>
 
-          {formData.metodePembayaran === 'Transfer Bank' && (
-            <div>
-              <label htmlFor="buktiPembayaran" className="block text-sm font-medium text-gray-700">Bukti Pembayaran</label>
-              <input
-                type="file"
-                id="buktiPembayaran"
-                name="buktiPembayaran"
-                onChange={handleChange}
-                required
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-indigo-500 sm:text-sm"
-              />
-            </div>
-          )}
+          <div>
+            <label htmlFor="buktiPembayaran" className="block text-sm font-medium text-gray-700">Bukti Pembayaran</label>
+            <input
+              type="file"
+              id="buktiPembayaran"
+              name="buktiPembayaran"
+              accept="image/*"
+              onChange={handleChange}
+              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-indigo-500 sm:text-sm"
+            />
+          </div>
 
           <div className="flex items-center">
             <input
@@ -274,17 +253,19 @@ const FormulirSma = () => {
               onChange={handleCheckboxChange}
               className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
             />
-            <label htmlFor="sudahMembayar" className="ml-2 block text-sm text-gray-900">Saya sudah membayar</label>
+            <label htmlFor="sudahMembayar" className="ml-2 block text-sm text-gray-900">
+              Saya sudah melakukan pembayaran
+            </label>
           </div>
 
           <button
             type="submit"
             disabled={!isFormValid}
-            className={`w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-base font-medium text-white ${
-              isFormValid ? 'bg-indigo-600 hover:bg-indigo-700' : 'bg-gray-400 cursor-not-allowed'
+            className={`w-full bg-blue-600 text-white py-2 px-4 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 ${
+              !isFormValid ? 'opacity-50 cursor-not-allowed' : 'hover:bg-blue-700'
             }`}
           >
-            Kirim
+            Daftar
           </button>
         </form>
       </div>

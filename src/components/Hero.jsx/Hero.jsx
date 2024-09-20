@@ -88,7 +88,7 @@ const Hero = () => {
               onClick={handleNavigate}
               className="bg-blue-500 text-white px-6 py-2 rounded-md font-semibold hover:bg-blue-600 transition-colors duration-300"
             >
-              Selengkapnya
+            Tentang Kami
             </button>
             <button
               onClick={() => navigate('/pendaftaran')}
