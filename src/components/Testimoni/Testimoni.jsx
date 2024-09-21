@@ -5,27 +5,22 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
 
-import Img1 from "/src/assets/hero-pondok1.jpeg";
-import Img2 from "/src/assets/hero-pondok2.jpg";
-import Img3 from "/src/assets/hero-pondok3.jpeg";
-
 const Testimoni = () => {
   const testimonies = [
     {
-      img: Img1,
-      name: "Jundil Islam",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-      img: Img2,
-      name: "Zakaria Bin Nur Ali",
-      text: "Pellentesque habitant morbi tristique senectus et netus.",
-    },
-    {
-      // Ganti URL YouTube Shorts dengan URL video standar
-      video: "https://www.youtube.com/embed/D97qywHp6RU", // URL video standar YouTube
+      video: "https://www.youtube.com/embed/D97qywHp6RU", // URL video embed
       name: "Radifan Hawari (Angkatan 1)",
       text: "Mahasiswa Turki",
+    },
+    {
+      video: "https://www.youtube.com/embed/WhLAQGWQjuE", // URL video embed
+      name: "Jundil Islam (angkatan 1)",
+      text: "Study King khalid University",
+    },
+    {
+      video: "https://www.youtube.com/embed/7ZSfXWvRB7k", // URL video embed
+      name: "Ibnu Taimiyah (Angkatan 2) ",
+      text: "Study Universitas Islam Madinah",
     },
   ];
 
@@ -51,25 +46,17 @@ const Testimoni = () => {
             className={`flex justify-center ${index % 2 === 0 ? 'animate-flip-left' : 'animate-flip-right'}`}
           >
             <div className="bg-white dark:bg-slate-800 rounded-lg p-4 shadow-lg max-w-xs text-center min-h-[250px]">
-              {testimony.video ? (
-                <div className="w-full h-48 mb-4">
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    src={testimony.video}
-                    title={testimony.name}
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              ) : (
-                <img
-                  src={testimony.img}
-                  alt={testimony.name}
-                  className="w-24 h-24 mx-auto rounded-full mb-4 object-cover"
-                />
-              )}
+              <div className="w-full h-48 mb-4">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src={testimony.video}
+                  title={testimony.name}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
               <h3 className="text-xl font-semibold mb-2">{testimony.name}</h3>
               <p className="text-gray-600 dark:text-gray-300">
                 {testimony.text}

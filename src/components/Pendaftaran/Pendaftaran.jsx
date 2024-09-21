@@ -28,7 +28,7 @@ const Pendaftaran = () => {
     <main className="bg-slate-100 dark:bg-slate-900 dark:text-white py-12 pt-40 mt-16 md:mb-50">
       {/* Judul Utama */}
       <h3 className="text-center text-5xl font-bold mb-10 underline">Penerimaan Santri Baru</h3>
-      <p className="text-center text-2xl font-bold mb-10 underline">Tahun ajaran 2024/2025</p>
+      <p className="text-center text-2xl font-bold mb-10 underline">Tahun ajaran 2025/2026</p>
 
       <section className="container mx-auto px-4 flex flex-col md:flex-row gap-8">
         {/* Container Brosur Pendaftaran */}
