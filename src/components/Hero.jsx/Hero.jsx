@@ -10,8 +10,8 @@ const Hero = () => {
   const navigate = useNavigate();
   
   const texts = [
-    "Selamat Datang",
-    "Di PPS AL-FURQON"
+    "Ahlan Wa Sahlan",
+    "Di PPS SALAFIYAH AL-FURQON"
   ];
   
   useEffect(() => {
