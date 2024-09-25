@@ -51,12 +51,14 @@ const Pendaftaran = () => {
               />
             </div>
             {/* Tombol Daftar SMP */}
-            <Link
-              to="/formulir-smp"
+            <a
+              href="https://bit.ly/4gzC6a1"
+              target="_blank" // Membuka tautan di tab baru
+              rel="noopener noreferrer" // Keamanan tambahan saat membuka tautan
               className="block mt-4 bg-green-500 text-white px-6 py-2 rounded-md text-center text-2xl"
             >
               Daftar SMP!
-            </Link>
+            </a>
             {/* Tombol Daftar SMA */}
             <Link
               to="/formulir-sma"
@@ -80,7 +82,7 @@ const Pendaftaran = () => {
               </button>
               {activeIndex === 0 && (
                 <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
-                  <p className="text-2xl">Pendaftaran bisa dilakukan dengan mengisi formulir online di website kami atau datang langsung ke pesantren.</p>
+                  <p className="text-2xl">Pendaftaran bisa dilakukan dengan mengisi formulir online memalalui website kami atau datang langsung ke pesantren.</p>
                 </div>
               )}
             </div>
@@ -91,17 +93,17 @@ const Pendaftaran = () => {
                 className="w-full bg-blue-500 text-white text-center px-4 py-2 text-left rounded-md focus:outline-none"
                 onClick={() => handleToggle(1)}
               >
-                Cara Pendaftaran
+                Cara Pendaftaran Online
               </button>
               {activeIndex === 1 && (
                 <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
-                  <p>Untuk pendaftaran, ikuti langkah-langkah berikut: 1. Pilih Jenjang. 2. Registrasi. 3. Bayar biaya pendaftaran. 4. Isi Formulir. 
+                  <p>Untuk pendaftaran online, ikuti langkah-langkah berikut: 1. Pilih Jenjang. 2. Registrasi. 3. Input Berkas Emis. 
                   <Link
                     to="/tonton-video"
                     className="block mt-4 flex items-center bg-red-500 text-white px-6 py-2 rounded-md text-center text-2xl"
                   >
                     <PlayIcon className="w-6 h-6 mr-2" />
-                    TONTON LENGKAP CARA PENDAFTARAN
+                    TONTON LENGKAP CARA PENDAFTARAN ONLINE
                   </Link></p>
                 </div>
               )}
@@ -162,7 +164,7 @@ const Pendaftaran = () => {
               </button>
               {activeIndex === 5 && (
                 <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
-                  <p>Jadwal ujian untuk pendaftaran adalah pada bulan Agustus untuk gelombang pertama, November untuk gelombang kedua, dan Januari untuk gelombang ketiga.</p>
+                  <p>Jadwal ujian akan diinformasikan setelah pendaftaran ditutup.</p>
                 </div>
               )}
             </div>
@@ -177,16 +179,18 @@ const Pendaftaran = () => {
               </button>
               {activeIndex === 6 && (
                 <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
-                  <p>Pengumuman hasil seleksi akan diumumkan pada bulan Desember untuk gelombang pertama, Maret untuk gelombang kedua, dan Mei untuk gelombang ketiga.</p>
+                  <p>Pengumuman hasil ujian akan diumumkan di website dan melalui email.</p>
                 </div>
               )}
             </div>
           </div>
         </div>
       </section>
-      
-      {/* Modal */}
-      <ImageModal isOpen={isModalOpen} onClose={closeModal} imageSrc={modalImage} />
+
+      {/* Modal untuk gambar brosur */}
+      {isModalOpen && (
+        <ImageModal imageSrc={modalImage} onClose={closeModal} />
+      )}
     </main>
   );
 };

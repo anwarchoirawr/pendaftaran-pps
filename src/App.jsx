@@ -12,7 +12,7 @@ import Service from "./components/Service/Service";
 import Testimoni from "./components/Testimoni/Testimoni";
 import InfoTerbaru from "./components/InfoTerbaru/InfoTerbaru"; 
 import Pendaftaran from "./components/Pendaftaran/Pendaftaran";
-import FormulirSmp from "./components/Pendaftaran/FormulirSmp";
+// import FormulirSmp from "./components/Pendaftaran/FormulirSmp";
 import FormulirSma from "./components/Pendaftaran/FormulirSma";
 import BannerDetails from "./components/BannerDetails/BannerDetails";
 import FullGallery from "./components/Gallery/FullGallery";
@@ -60,7 +60,7 @@ function App() {
       />
       <Route path="/gallery" element={<FullGallery />} />
       <Route path="/pendaftaran" element={<Pendaftaran />} />
-      <Route path="/formulir-smp" element={<FormulirSmp />} />
+      {/* <Route path="/formulir-smp" element={<FormulirSmp />} /> */}
       <Route path="/formulir-sma" element={<FormulirSma />} />
       <Route path="/info-terbaru" element={<InfoTerbaru />} />
       <Route path="/profil-lengkap" element={<ProfilLengkap />} />

@@ -49,7 +49,7 @@ $stmt->bind_param("ssiss", $namaAnak, $namaWali, $noHpWali, $metodePembayaran, $
 
 // Eksekusi SQL statement
 if ($stmt->execute()) {
-    echo json_encode(["message" => "Barakallahu fikum! Data berhasil dikirim, Silahkan lanjutkan untuk pengisian berkas"]);
+    echo json_encode(["message" => "Barakallahu fikum! Data berhasil dikirim"]);
 } else {
     echo json_encode(["error" => "Error: " . $stmt->error]);
 }
