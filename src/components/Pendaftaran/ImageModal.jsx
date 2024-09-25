@@ -1,3 +1,4 @@
+// ImageModal.jsx
 import React, { useState } from "react";
 
 const ImageModal = ({ isOpen, imageSrc, onClose }) => {
@@ -6,33 +7,31 @@ const ImageModal = ({ isOpen, imageSrc, onClose }) => {
   if (!isOpen) return null;
 
   const handleZoomToggle = (e) => {
-    e.stopPropagation(); // Menghindari klik pada gambar menutup modal
+    e.stopPropagation(); // Menghindari modal tertutup saat gambar diklik
     setIsZoomed(!isZoomed);
   };
 
   return (
     <div
       className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-75"
-      onClick={onClose}
+      onClick={onClose} // Modal akan ditutup jika bagian luar gambar diklik
     >
       <div
-        className="relative p-4 bg-white rounded-md dark:bg-slate-800"
-        style={{
-          maxWidth: "90vw",
-          maxHeight: "90vh",
-        }}
+        className="relative"
+        onClick={(e) => e.stopPropagation()} // Cegah modal tertutup saat area dalam modal diklik
       >
         <img
           src={imageSrc}
           alt="Brosur"
-          className={`rounded-md object-contain cursor-pointer transition-transform duration-300 ease-in-out ${
-            isZoomed ? "scale-150" : "scale-100"
-          }`}
-          style={{
-            maxWidth: "100%",
-            maxHeight: "80vh",
-          }}
           onClick={handleZoomToggle}
+          className={`cursor-pointer transition-transform duration-300 ease-in-out ${isZoomed ? "scale-150" : "scale-100"}`}
+          style={{
+            width: isZoomed ? "auto" : "90vw", // Lebar sesuai zoom
+            height: isZoomed ? "auto" : "80vh", // Tinggi sesuai zoom
+            maxWidth: "100%", // Tidak melebihi viewport
+            maxHeight: "100%", // Tidak melebihi viewport
+            objectFit: "contain", // Agar gambar tetap proporsional
+          }}
         />
         <button
           onClick={onClose}

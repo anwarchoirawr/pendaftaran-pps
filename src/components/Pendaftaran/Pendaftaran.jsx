@@ -1,8 +1,7 @@
 // Pendaftaran.jsx
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import brosurImage1 from "/src/assets/brosur.png";
-import brosurImage2 from "/src/assets/hero-pondok2.jpg";
+import brosurImage1 from "/src/assets/brosurpps.jpg";
 import ImageModal from "./ImageModal";
 import { PlayIcon } from '@heroicons/react/24/solid';
 
@@ -27,34 +26,29 @@ const Pendaftaran = () => {
   return (
     <main className="bg-slate-100 dark:bg-slate-900 dark:text-white py-12 pt-40 mt-16 md:mb-50">
       {/* Judul Utama */}
-      <h3 className="text-center text-5xl font-bold mb-10 underline">Penerimaan Santri Baru</h3>
-      <p className="text-center text-2xl font-bold mb-10 underline">Tahun ajaran 2025/2026</p>
+      <h3 className="text-center text-5xl font-bold mb-10 ">Penerimaan Santri Baru</h3>
+      <p className="text-center text-2xl font-bold mb-10 ">Tahun ajaran 2025/2026</p>
+      <h1 className="text-center text-5xl font-bold mb-10 underline">Sudah Dibuka</h1>
 
       <section className="container mx-auto px-4 flex flex-col md:flex-row gap-8">
         {/* Container Brosur Pendaftaran */}
         <div className="w-full md:w-1/2 lg:w-1/2 shadow-lg rounded-lg overflow-hidden bg-white dark:bg-slate-800 mb-8 md:mb-0">
           <div className="p-4">
             <h2 className="text-3xl font-bold mb-4">Brosur Pendaftaran</h2>
-            {/* Container untuk scroll horizontal */}
-            <div className="flex gap-4 overflow-x-auto mb-4">
+            {/* Gambar brosur */}
+            <div className="mb-4">
               <img
                 src={brosurImage1}
-                alt="Brosur 1"
-                className="w-full h-auto object-cover rounded-md flex-shrink-0 cursor-pointer"
+                alt="Brosur Pendaftaran"
+                className="w-full h-auto object-cover rounded-md cursor-pointer"
                 onClick={() => openModal(brosurImage1)}
-              />
-              <img
-                src={brosurImage2}
-                alt="Brosur 2"
-                className="w-full h-auto object-cover rounded-md flex-shrink-0 cursor-pointer"
-                onClick={() => openModal(brosurImage2)}
               />
             </div>
             {/* Tombol Daftar SMP */}
             <a
               href="https://bit.ly/4gzC6a1"
-              target="_blank" // Membuka tautan di tab baru
-              rel="noopener noreferrer" // Keamanan tambahan saat membuka tautan
+              target="_blank"
+              rel="noopener noreferrer"
               className="block mt-4 bg-green-500 text-white px-6 py-2 rounded-md text-center text-2xl"
             >
               Daftar SMP!
@@ -179,7 +173,7 @@ const Pendaftaran = () => {
               </button>
               {activeIndex === 6 && (
                 <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
-                  <p>Pengumuman hasil ujian akan diumumkan di website dan melalui email.</p>
+                  <p>Pengumuman hasil ujian akan diinformasikan melalui website dan email yang terdaftar.</p>
                 </div>
               )}
             </div>
@@ -187,10 +181,9 @@ const Pendaftaran = () => {
         </div>
       </section>
 
-      {/* Modal untuk gambar brosur */}
-      {isModalOpen && (
-        <ImageModal imageSrc={modalImage} onClose={closeModal} />
-      )}
+      {/* Modal Image */}
+      <ImageModal isOpen={isModalOpen} imageSrc={modalImage} onClose={closeModal} />
+
     </main>
   );
 };
