@@ -109,11 +109,11 @@ const Pendaftaran = () => {
                 className="w-full bg-blue-500 text-white text-center px-4 py-2 text-left rounded-md focus:outline-none"
                 onClick={() => handleToggle(2)}
               >
-                Informasi Biaya
+                Syarat Pendaftaran
               </button>
               {activeIndex === 2 && (
                 <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
-                  <p>Biaya pendaftaran adalah Rp. 300.000. Biaya ini sudah termasuk ujian awal dan administrasi.</p>
+                  <p>1.Putra. 2.Sehat jasmani dan rohani.  3.Lancar membaca Al Qur'an. 4.Mendapatkan izin ortu/wali. 5.Surat Ket Bebas TBC,hepatitis A & B serta kk dikumpulkan saat pendaftaran</p>
                 </div>
               )}
             </div>
@@ -124,11 +124,11 @@ const Pendaftaran = () => {
                 className="w-full text-center bg-blue-500 text-white px-4 py-2 text-left rounded-md focus:outline-none"
                 onClick={() => handleToggle(3)}
               >
-                Kuota
+                Tes Seleksi 
               </button>
               {activeIndex === 3 && (
                 <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
-                  <p>Kuota yang diterima adalah 60 siswa untuk setiap angkatan.</p>
+                  <p>1.Tes tahfizh. 2.Tes wawancara calon santri. 3.Tes wawancara wali</p>
                 </div>
               )}
             </div>
@@ -143,7 +143,7 @@ const Pendaftaran = () => {
               </button>
               {activeIndex === 4 && (
                 <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
-                  <p>Gelombang pendaftaran terdiri dari 3 gelombang: Gelombang 1 (Januari - Maret), Gelombang 2 (April - Juni), Gelombang 3 (Juli - September).</p>
+                  <p>Gelombang pendaftaran terdiri dari 3 gelombang: Gelombang 1 (7 Oktober - 9 November 2024), Gelombang 2 (9 Desember - 1 Febuari 2025), Gelombang 3 (3 Maret- Kuota Terpenuhi).</p>
                 </div>
               )}
             </div>
