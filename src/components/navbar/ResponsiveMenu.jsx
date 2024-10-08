@@ -66,7 +66,7 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
           {/* Tambahkan link Pendaftaran */}
          </ul>
         <a
-          href="https://wa.me/6281392645780"
+          href="https://wa.me/62895800086699"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-6 inline-block w-full text-center bg-green-500 hover:bg-green-600 text-white font-semibold py-2 rounded-md transition-colors duration-300"

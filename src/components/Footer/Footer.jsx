@@ -50,14 +50,14 @@ const Footer = () => {
             </div>
             <div className="flex items-center gap-3 mt-3">
               <a
-                href="https://wa.me/6281392645780"
+                href="https://wa.me/62895800086699"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-[#25D366]"
               >
                 <FaWhatsapp className="text-2xl duration-300" />
               </a>
-              <p>+62 813-9264-5780</p>
+              <p>+62 895-80008-6699</p>
             </div>
             {/* Social Handle */}
             <div className="flex items-center gap-3 mt-6">

@@ -3,7 +3,7 @@ import videoTutorial from "/src/assets/video/TrialPendaftaran.mp4"; // Ganti den
 
 const TontonVideo = () => {
   const handleHubungiKami = () => {
-    window.location.href = "https://wa.me/1234567890"; // Ganti dengan nomor WhatsApp yang sesuai
+    window.location.href = "https://wa.me/62895800086699"; // Ganti dengan nomor WhatsApp yang sesuai
   };
 
   return (
