@@ -64,121 +64,139 @@ const Pendaftaran = () => {
         </div>
 
         {/* Akordeon */}
-        <div className="w-full md:w-2/3 lg:w-2/3 max-w-4xl mx-auto">
-          <div className="flex flex-col space-y-2">
-            {/* Pendaftaran */}
-            <div className="bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 p-3 rounded-md shadow-lg">
-              <button
-                className="w-full bg-blue-500 text-white px-3 py-2 text-center rounded-md focus:outline-none"
-                onClick={() => handleToggle(0)}
-              >
-                Pendaftaran
-              </button>
-              {activeIndex === 0 && (
-                <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
-                  <p className="text-2xl">Pendaftaran bisa dilakukan dengan mengisi formulir online memalalui website kami atau datang langsung ke pesantren.</p>
-                </div>
-              )}
-            </div>
-
-            {/* Cara Pendaftaran */}
-            <div className="bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 p-3 rounded-md shadow-lg">
-              <button
-                className="w-full bg-blue-500 text-white text-center px-4 py-2 text-left rounded-md focus:outline-none"
-                onClick={() => handleToggle(1)}
-              >
-                Cara Pendaftaran Online
-              </button>
-              {activeIndex === 1 && (
-                <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
-                  <p>Untuk pendaftaran online, ikuti langkah-langkah berikut: 1. Pilih Jenjang. 2. Registrasi & Input Berkas.
-                  <Link
-                    to="/tonton-video"
-                    className="block mt-4 flex items-center bg-red-500 text-white px-6 py-2 rounded-md text-center text-2xl"
-                  >
-                    <PlayIcon className="w-6 h-6 mr-2" />
-                    TONTON LENGKAP CARA PENDAFTARAN ONLINE
-                  </Link></p>
-                </div>
-              )}
-            </div>
-
-            {/* Syarat Pendaftaran */}
-            <div className="bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 p-3 rounded-md shadow-lg">
-              <button
-                className="w-full bg-blue-500 text-white text-center px-4 py-2 text-left rounded-md focus:outline-none"
-                onClick={() => handleToggle(2)}
-              >
-                Syarat Pendaftaran
-              </button>
-              {activeIndex === 2 && (
-                <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
-                  <p>1. Putra. 2. Sehat jasmani dan rohani. 3. Lancar membaca Al Qur'an. 4. Mendapatkan izin ortu/wali. 5. Surat Ket Bebas TBC, Hepatitis A & B serta KK dikumpulkan saat pendaftaran</p>
-                </div>
-              )}
-            </div>
-
-            {/* Biaya Pendaftaran */}
-            <div className="bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 p-3 rounded-md shadow-lg">
-              <button
-                className="w-full bg-blue-500 text-white text-center px-4 py-2 text-left rounded-md focus:outline-none"
-                onClick={() => handleToggle(3)}
-              >
-                Biaya Pendaftaran
-              </button>
-              {activeIndex === 3 && (
-                <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
-                  <p>Biaya pendaftaran sebesar **Rp 350.000**. Biaya ini mencakup semua biaya administrasi dan ujian seleksi santri.</p>
-                </div>
-              )}
-            </div>
-
-            {/* Gelombang Pendaftaran */}
-            <div className="bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 p-3 rounded-md shadow-lg">
-              <button
-                className="w-full text-center bg-blue-500 text-white px-4 py-2 text-left rounded-md focus:outline-none"
-                onClick={() => handleToggle(4)}
-              >
-                Gelombang Pendaftaran
-              </button>
-              {activeIndex === 4 && (
-                <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
-                  <p>Gelombang pendaftaran terdiri dari 2 gelombang: Gelombang 1 (12 Oktober 2024 - 31 Januari 2025), Gelombong 2 akan dibuka apabila gelombang 1 belum terpenuhi.</p>
-                </div>
-              )}
-            </div>
-
-            {/* Jadwal Tes/Ujian */}
-            <div className="bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 p-3 rounded-md shadow-lg">
-              <button
-                className="w-full text-center bg-blue-500 text-white px-4 py-2 text-left rounded-md focus:outline-none"
-                onClick={() => handleToggle(5)}
-              >
-                Jadwal Tes/Ujian
-              </button>
-              {activeIndex === 5 && (
-                <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
-                  <p>Tes menggunakan sistem <b>Weekly Hybrid Testing System</b>. Jika Anda mendaftar pada pekan ini, tes akan dilaksanakan pada hari Sabtu di pekan yang sama. Admin akan mengirimkan jadwal tes melalui WhatsApp.</p>
-                </div>
-              )}
-            </div>
-
-            {/* Pengumuman */}
-            <div className="bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 p-3 rounded-md shadow-lg">
-              <button
-                className="w-full text-center bg-blue-500 text-white px-4 py-2 text-left rounded-md focus:outline-none"
-                onClick={() => handleToggle(6)}
-              >
-                Pengumuman
-              </button>
-              {activeIndex === 6 && (
-                <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
-                  <p>Pengumuman hasil tes akan diumumkan 3 hari setelah ujian dilaksanakan, dan akan diinformasikan melalui WhatsApp dan media sosial kami.</p>
-                </div>
-              )}
-            </div>
-          </div>
+        {/* Akordeon */}
+<div className="w-full md:w-2/3 lg:w-2/3 max-w-4xl mx-auto">
+  <div className="flex flex-col space-y-2">
+    {/* Pendaftaran */}
+    <div className="bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 p-3 rounded-md shadow-lg">
+      <button
+        className="w-full bg-blue-500 text-white px-3 py-2 text-center rounded-md focus:outline-none"
+        onClick={() => handleToggle(0)}
+      >
+        Pendaftaran
+      </button>
+      {activeIndex === 0 && (
+        <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
+          <p className="text-2xl">Pendaftaran bisa dilakukan dengan mengisi formulir online memalalui website kami atau datang langsung ke pesantren.</p>
         </div>
+      )}
+    </div>
+
+    {/* Cara Pendaftaran */}
+    <div className="bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 p-3 rounded-md shadow-lg">
+      <button
+        className="w-full bg-blue-500 text-white text-center px-4 py-2 text-left rounded-md focus:outline-none"
+        onClick={() => handleToggle(1)}
+      >
+        Cara Pendaftaran Online
+      </button>
+      {activeIndex === 1 && (
+        <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
+          <p>Untuk pendaftaran online, ikuti langkah-langkah berikut: 1. Pilih Jenjang. 2. Registrasi & Input Berkas.
+            <Link
+              to="/tonton-video"
+              className="block mt-4 flex items-center bg-red-500 text-white px-6 py-2 rounded-md text-center text-2xl"
+            >
+              <PlayIcon className="w-6 h-6 mr-2" />
+              TONTON LENGKAP CARA PENDAFTARAN ONLINE
+            </Link>
+          </p>
+        </div>
+      )}
+    </div>
+
+    {/* Syarat Pendaftaran */}
+    <div className="bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 p-3 rounded-md shadow-lg">
+      <button
+        className="w-full bg-blue-500 text-white text-center px-4 py-2 text-left rounded-md focus:outline-none"
+        onClick={() => handleToggle(2)}
+      >
+        Syarat Pendaftaran
+      </button>
+      {activeIndex === 2 && (
+        <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
+          <p>1. Putra. 2. Sehat jasmani dan rohani. 3. Lancar membaca Al Qur'an. 4. Mendapatkan izin ortu/wali. 5. Surat Ket Bebas TBC, Hepatitis A & B serta KK dikumpulkan saat pendaftaran</p>
+        </div>
+      )}
+    </div>
+
+    {/* Biaya Pendaftaran */}
+    <div className="bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 p-3 rounded-md shadow-lg">
+      <button
+        className="w-full bg-blue-500 text-white text-center px-4 py-2 text-left rounded-md focus:outline-none"
+        onClick={() => handleToggle(3)}
+      >
+        Biaya Pendaftaran
+      </button>
+      {activeIndex === 3 && (
+        <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
+          <p>Biaya pendaftaran sebesar **Rp 350.000**. Biaya ini mencakup semua biaya administrasi dan ujian seleksi santri.</p>
+        </div>
+      )}
+    </div>
+
+    {/* Gelombang Pendaftaran */}
+    <div className="bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 p-3 rounded-md shadow-lg">
+      <button
+        className="w-full text-center bg-blue-500 text-white px-4 py-2 text-left rounded-md focus:outline-none"
+        onClick={() => handleToggle(4)}
+      >
+        Gelombang Pendaftaran
+      </button>
+      {activeIndex === 4 && (
+        <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
+          <p>Gelombang pendaftaran terdiri dari 2 gelombang: Gelombang 1 (12 Oktober 2024 - 31 Januari 2025), Gelombong 2 akan dibuka apabila gelombang 1 belum terpenuhi.</p>
+        </div>
+      )}
+    </div>
+
+    {/* Materi Tes/Ujian */}
+    <div className="bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 p-3 rounded-md shadow-lg">
+      <button
+        className="w-full text-center bg-blue-500 text-white px-4 py-2 text-left rounded-md focus:outline-none"
+        onClick={() => handleToggle(5)}
+      >
+        Materi Tes/Ujian
+      </button>
+      {activeIndex === 5 && (
+        <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
+          <p>1.Tes Tahfidz, 2. Tes wawancara calon Santri, 3. Tes Wawancara calon Wali Santri</p>
+        </div>
+      )}
+    </div>
+
+    {/* Jadwal Tes/Ujian */}
+    <div className="bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 p-3 rounded-md shadow-lg">
+      <button
+        className="w-full text-center bg-blue-500 text-white px-4 py-2 text-left rounded-md focus:outline-none"
+        onClick={() => handleToggle(6)}
+      >
+        Jadwal Tes/Ujian
+      </button>
+      {activeIndex === 6 && (
+        <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
+          <p>Tes menggunakan sistem <b>Weekly Hybrid Testing System</b>. Jika Anda mendaftar pada pekan ini, tes akan dilaksanakan pada hari Sabtu di pekan yang sama. Admin akan mengirimkan jadwal tes melalui WhatsApp.</p>
+        </div>
+      )}
+    </div>
+
+    {/* Pengumuman */}
+    <div className="bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 p-3 rounded-md shadow-lg">
+      <button
+        className="w-full text-center bg-blue-500 text-white px-4 py-2 text-left rounded-md focus:outline-none"
+        onClick={() => handleToggle(7)}
+      >
+        Pengumuman
+      </button>
+      {activeIndex === 7 && (
+        <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
+          <p>Pengumuman hasil tes akan diumumkan / diinformasikan melalui WhatsApp yang terdaftar dan Website kami.</p>
+        </div>
+      )}
+    </div>
+  </div>
+</div>
+
       </section>
 
       {/* Modal Gambar */}
