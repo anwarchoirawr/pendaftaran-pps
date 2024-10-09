@@ -115,7 +115,7 @@ const Pendaftaran = () => {
       </button>
       {activeIndex === 2 && (
         <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
-          <p>1. Putra. 2. Sehat jasmani dan rohani. 3. Lancar membaca Al Qur'an. 4. Mendapatkan izin ortu/wali. 5. Surat Ket Bebas TBC, Hepatitis B serta KK dikumpulkan saat pendaftaran. 6.Khusus Ulya memiliki hafalan minimal 2 juz.</p>
+          <p>1. Putra. 2. Sehat jasmani dan rohani. 3. Lancar membaca Al Qur'an. 4. Mendapatkan izin ortu/wali. 5. Surat Ket Bebas TBC & Hepatitis B. 6.Khusus Ulya memiliki hafalan minimal 2 juz.</p>
         </div>
       )}
     </div>
