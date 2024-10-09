@@ -46,7 +46,7 @@ const Pendaftaran = () => {
             </div>
             {/* Tombol Daftar SMP */}
             <a
-              href="https://bit.ly/4gzC6a1"
+              href="https://bit.ly/3U1kFps"
               target="_blank"
               rel="noopener noreferrer"
               className="block mt-4 bg-green-500 text-white px-6 py-2 rounded-md text-center text-2xl"
@@ -91,7 +91,7 @@ const Pendaftaran = () => {
               </button>
               {activeIndex === 1 && (
                 <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
-                  <p>Untuk pendaftaran online, ikuti langkah-langkah berikut: 1. Pilih Jenjang. 2. Registrasi. 3. Input Berkas Emis. 
+                  <p>Untuk pendaftaran online, ikuti langkah-langkah berikut: 1. Pilih Jenjang. 2. Registrasi & Input Berkas.
                   <Link
                     to="/tonton-video"
                     className="block mt-4 flex items-center bg-red-500 text-white px-6 py-2 rounded-md text-center text-2xl"
@@ -103,7 +103,7 @@ const Pendaftaran = () => {
               )}
             </div>
 
-            {/* Informasi Biaya */}
+            {/* Syarat Pendaftaran */}
             <div className="bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 p-3 rounded-md shadow-lg">
               <button
                 className="w-full bg-blue-500 text-white text-center px-4 py-2 text-left rounded-md focus:outline-none"
@@ -113,22 +113,22 @@ const Pendaftaran = () => {
               </button>
               {activeIndex === 2 && (
                 <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
-                  <p>1.Putra. 2.Sehat jasmani dan rohani.  3.Lancar membaca Al Qur'an. 4.Mendapatkan izin ortu/wali. 5.Surat Ket Bebas TBC,hepatitis A & B serta kk dikumpulkan saat pendaftaran</p>
+                  <p>1. Putra. 2. Sehat jasmani dan rohani. 3. Lancar membaca Al Qur'an. 4. Mendapatkan izin ortu/wali. 5. Surat Ket Bebas TBC, Hepatitis A & B serta KK dikumpulkan saat pendaftaran</p>
                 </div>
               )}
             </div>
 
-            {/* Kuota */}
+            {/* Biaya Pendaftaran */}
             <div className="bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 p-3 rounded-md shadow-lg">
               <button
-                className="w-full text-center bg-blue-500 text-white px-4 py-2 text-left rounded-md focus:outline-none"
+                className="w-full bg-blue-500 text-white text-center px-4 py-2 text-left rounded-md focus:outline-none"
                 onClick={() => handleToggle(3)}
               >
-                Tes Seleksi 
+                Biaya Pendaftaran
               </button>
               {activeIndex === 3 && (
                 <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
-                  <p>1.Tes tahfizh. 2.Tes wawancara calon santri. 3.Tes wawancara wali</p>
+                  <p>Biaya pendaftaran sebesar **Rp 350.000**. Biaya ini mencakup semua biaya administrasi dan ujian seleksi santri.</p>
                 </div>
               )}
             </div>
@@ -143,22 +143,22 @@ const Pendaftaran = () => {
               </button>
               {activeIndex === 4 && (
                 <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
-                  <p>Gelombang pendaftaran terdiri dari 3 gelombang: Gelombang 1 (7 Oktober - 9 November 2024), Gelombang 2 (9 Desember - 1 Febuari 2025), Gelombang 3 (3 Maret- Kuota Terpenuhi).</p>
+                  <p>Gelombang pendaftaran terdiri dari 2 gelombang: Gelombang 1 (12 Oktober 2024 - 31 Januari 2025), Gelombong 2 akan dibuka apabila gelombang 1 belum terpenuhi.</p>
                 </div>
               )}
             </div>
 
-            {/* Ujian */}
+            {/* Jadwal Tes/Ujian */}
             <div className="bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 p-3 rounded-md shadow-lg">
               <button
                 className="w-full text-center bg-blue-500 text-white px-4 py-2 text-left rounded-md focus:outline-none"
                 onClick={() => handleToggle(5)}
               >
-                Jadwal Ujian
+                Jadwal Tes/Ujian
               </button>
               {activeIndex === 5 && (
                 <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
-                  <p>Jadwal ujian akan diinformasikan setelah pendaftaran ditutup.</p>
+                  <p>Tes menggunakan sistem <b>Weekly Hybrid Testing System</b>. Jika Anda mendaftar pada pekan ini, tes akan dilaksanakan pada hari Sabtu di pekan yang sama. Admin akan mengirimkan jadwal tes melalui WhatsApp.</p>
                 </div>
               )}
             </div>
@@ -173,7 +173,7 @@ const Pendaftaran = () => {
               </button>
               {activeIndex === 6 && (
                 <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
-                  <p>Pengumuman hasil ujian akan diinformasikan melalui website dan email yang terdaftar.</p>
+                  <p>Pengumuman hasil tes akan diumumkan 3 hari setelah ujian dilaksanakan, dan akan diinformasikan melalui WhatsApp dan media sosial kami.</p>
                 </div>
               )}
             </div>
@@ -181,9 +181,8 @@ const Pendaftaran = () => {
         </div>
       </section>
 
-      {/* Modal Image */}
-      <ImageModal isOpen={isModalOpen} imageSrc={modalImage} onClose={closeModal} />
-
+      {/* Modal Gambar */}
+      <ImageModal isOpen={isModalOpen} onClose={closeModal} imageSrc={modalImage} />
     </main>
   );
 };
