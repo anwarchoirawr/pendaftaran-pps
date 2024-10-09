@@ -79,7 +79,7 @@ const BannerDetails = ({ reverse = false }) => {
           >
             <h2 className="text-3xl font-bold mb-4">01. Kenapa PPS AL-FURQON</h2>
             <p className="text-slate-600 dark:text-slate-400 text-lg">
-            Mencetak generasi Qur'ani yang berilmu beradab dan mampu bersaing dengan dunia kerja .
+        Mendidik dengan Adab, Membibing dengan Ilmu.
             </p>
           </div>
 
@@ -91,7 +91,8 @@ const BannerDetails = ({ reverse = false }) => {
           >
             <h2 className="text-3xl font-bold mb-4 md:pl-9">02. VISI</h2>
             <p className="text-slate-600 dark:text-slate-400 md:pl-9  text-lg">
-              Visi kami adalah: Mencetak generasi yang hafizh Al Qur’an, berakidah lurus, berakhlak mulia dan siap berdakwah di masyarakat.
+            <p className="mb-2">Mencetak generasi yang hafizh, berakhlak mulia, beraqidah lurus dan siap berdakwah di masyarakat.</p>
+          
             </p>
           </div>
 
@@ -101,13 +102,13 @@ const BannerDetails = ({ reverse = false }) => {
             data-aos-duration="800"
             className="text-center md:text-left"
           >
-            <h2 className="text-3xl font-bold mb-4">03. MISI</h2>
-            <p className="text-slate-600 dark:text-slate-400  text-lg">
-              Menanamkan akidah yang benar dan menerapkannya dalam kegiatan sehari-hari.
-              Menciptakan lingkungan yang Qur’ani.
-              Menumbuhkan sepuluh karakter penunjang visi.
-              Membiasakan adab-adab islami dalam kehidupan sehari-hari terhadap teman, guru dan seluruh civitas di dalam pondok serta masyarakat di luar pondok.
-            </p>
+            <h2 className="text-xl font-semibold"> <b>03. MISI </b></h2>
+                <ul className="list-disc list-inside">
+                    <li>Menanamkan Aqidah yang benar dan menerapkan dalam kehidupan sehari-hari.</li>
+                    <li>Menciptakan lingkungan yang qur'ani .</li>
+                    <li>Menumbuhkan karakter "budi pakerti".</li>
+                    <li>Membiasakan adab-adab Islami dalam kehidupan sehari-hari terhadap teman,guru, dan seluruh civitas di dalam ma'had serta masyarakat di luar ma'had.</li>
+                </ul>
           </div>
         </div>
       </section>

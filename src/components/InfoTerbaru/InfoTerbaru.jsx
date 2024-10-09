@@ -15,7 +15,7 @@ const InfoTerbaru = () => {
   const navigate = useNavigate();
 
   const infos = [
-    { src: infoImage1, alt: "Info 1", description: "Penerimaan Santri Baru", additionalText: "Tahun ajaran 2024/2025", isRegistration: true },
+    { src: infoImage1, alt: "Info 1", description: "Penerimaan Santri Baru", additionalText: "Tahun ajaran 2025/2026", isRegistration: true },
     { src: infoImage2, alt: "Info 2", description: "BBM", additionalText: "Bersih bersih masjid" },
     { src: infoImage3, alt: "Info 3", description: "Asesment Nasional", additionalText: "Jenjang Wustho" },
     { src: infoImage4, alt: "Info 4", description: "Event Kejuaraan" , additionalText: "Alikhlas champion league" },

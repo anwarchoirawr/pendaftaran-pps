@@ -11,7 +11,7 @@ const Hero = () => {
   
   const texts = [
     "Ahlan Wa Sahlan",
-    "Di PPS SALAFIYAH AL-FURQON"
+    "Di PPS AL-FURQON Magelang"
   ];
   
   useEffect(() => {

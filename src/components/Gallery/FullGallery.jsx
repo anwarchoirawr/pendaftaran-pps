@@ -15,9 +15,9 @@ const FullGallery = () => {
 
   const images = [
     { src: heroImage1, alt: "Kajian Ahad", description: "Futsal" },
-    { src: heroImage2, alt: "Kenaikan Sabuk", description: "Kenaikan sabuk" },
-    { src: heroImage3, alt: "Gambar 3", description: "Sholat jamaah Santri MA" },
-    { src: heroImage4, alt: "Gambar 4", description: "Kajian" },
+    { src: heroImage2, alt: "Kenaikan Sabuk", description: "Kenaikan Sabuk Taekwondo" },
+    { src: heroImage3, alt: "Gambar 3", description: "Sholat Jamaah Santri Ulya" },
+    { src: heroImage4, alt: "Gambar 4", description: "Kajian Rutin" },
     { src: heroImage5, alt: "Gambar 5", description: "Upacara" },
     { src: heroImage6, alt: "Gambar 5", description: "Paskibra" },
 

@@ -26,8 +26,8 @@ const Pendaftaran = () => {
   return (
     <main className="bg-slate-100 dark:bg-slate-900 dark:text-white py-12 pt-40 mt-16 md:mb-50">
       {/* Judul Utama */}
-      <h3 className="text-center text-5xl font-bold mb-10 ">Penerimaan Santri Baru</h3>
-      <p className="text-center text-2xl font-bold mb-10 ">Tahun ajaran 2025/2026</p>
+      <h3 className="text-center text-5xl font-bold mb-10 ">PPDB</h3>
+      <p className="text-center text-2xl font-bold mb-10 ">Tahun Ajaran 2025/2026</p>
       <h1 className="text-center text-5xl font-bold mb-10 underline">Sudah Dibuka</h1>
 
       <section className="container mx-auto px-4 flex flex-col md:flex-row gap-8">
@@ -77,7 +77,7 @@ const Pendaftaran = () => {
       </button>
       {activeIndex === 0 && (
         <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
-          <p className="text-2xl">Pendaftaran bisa dilakukan dengan mengisi formulir online memalalui website kami atau datang langsung ke pesantren.</p>
+          <p className="text-2xl">Pendaftaran dapat dilakukan dengan mengisi formulir online melalui website kami atau datang langsung ke pesantren.</p>
         </div>
       )}
     </div>
@@ -115,7 +115,7 @@ const Pendaftaran = () => {
       </button>
       {activeIndex === 2 && (
         <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
-          <p>1. Putra. 2. Sehat jasmani dan rohani. 3. Lancar membaca Al Qur'an. 4. Mendapatkan izin ortu/wali. 5. Surat Ket Bebas TBC, Hepatitis A & B serta KK dikumpulkan saat pendaftaran</p>
+          <p>1. Putra. 2. Sehat jasmani dan rohani. 3. Lancar membaca Al Qur'an. 4. Mendapatkan izin ortu/wali. 5. Surat Ket Bebas TBC, Hepatitis B serta KK dikumpulkan saat pendaftaran. 6.Khusus Ulya memiliki hafalan minimal 2 juz.</p>
         </div>
       )}
     </div>
@@ -130,7 +130,7 @@ const Pendaftaran = () => {
       </button>
       {activeIndex === 3 && (
         <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
-          <p>Biaya pendaftaran sebesar **Rp 350.000**. Biaya ini mencakup semua biaya administrasi dan ujian seleksi santri.</p>
+          <p>Biaya pendaftaran sebesar **Rp 350.000**.</p>
         </div>
       )}
     </div>
@@ -145,7 +145,7 @@ const Pendaftaran = () => {
       </button>
       {activeIndex === 4 && (
         <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
-          <p>Gelombang pendaftaran terdiri dari 2 gelombang: Gelombang 1 (12 Oktober 2024 - 31 Januari 2025), Gelombong 2 akan dibuka apabila gelombang 1 belum terpenuhi.</p>
+          <p>Gelombang 1 (12 Oktober 2024 - 31 Januari 2025), Gelombang 2 akan dibuka apabila kuota belum terpenuhi.</p>
         </div>
       )}
     </div>
@@ -190,7 +190,7 @@ const Pendaftaran = () => {
       </button>
       {activeIndex === 7 && (
         <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
-          <p>Pengumuman hasil tes akan diumumkan / diinformasikan melalui WhatsApp yang terdaftar dan Website kami.</p>
+          <p>Pengumuman hasil tes akan diumumkan 10 hari setelah tes dan diinformasikan melalui WhatsApp yang terdaftar serta Website kami.</p>
         </div>
       )}
     </div>

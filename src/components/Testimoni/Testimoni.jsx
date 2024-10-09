@@ -14,13 +14,13 @@ const Testimoni = () => {
     },
     {
       video: "https://www.youtube.com/embed/WhLAQGWQjuE", // URL video embed
-      name: "Jundil Islam (angkatan 1)",
-      text: "Study King khalid University",
+      name: "Jundil Islam (Angkatan 1)",
+      text: "Mahasiswa King khalid University",
     },
     {
       video: "https://www.youtube.com/embed/7ZSfXWvRB7k", // URL video embed
       name: "Ibnu Taimiyah (Angkatan 2) ",
-      text: "Study Universitas Islam Madinah",
+      text: "Mahasiswa Universitas Islam Madinah",
     },
   ];
 
