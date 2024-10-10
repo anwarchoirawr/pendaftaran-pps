@@ -46,7 +46,7 @@ const Pendaftaran = () => {
             </div>
             {/* Tombol Daftar SMP */}
             <a
-              href="https://bit.ly/3U1kFps"
+              href="https://forms.gle/BoeLK29RSLsZjQ7XA"
               target="_blank"
               rel="noopener noreferrer"
               className="block mt-4 bg-green-500 text-white px-6 py-2 rounded-md text-center text-2xl"
@@ -54,12 +54,14 @@ const Pendaftaran = () => {
               Daftar SMP!
             </a>
             {/* Tombol Daftar SMA */}
-            <Link
-              to="/formulir-sma"
-              className="block mt-4 bg-yellow-500 text-white px-6 py-2 rounded-md text-center text-2xl"
+            <a
+              href="https://forms.gle/8DQuny3FH3oodHAS8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block mt-4 bg-blue-500 text-white px-6 py-2 rounded-md text-center text-2xl"
             >
               Daftar SMA!
-            </Link>
+            </a>
           </div>
         </div>
 
