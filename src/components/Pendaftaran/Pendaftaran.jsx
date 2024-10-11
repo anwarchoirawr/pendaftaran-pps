@@ -57,7 +57,7 @@ const Pendaftaran = () => {
             </Swiper>
             {/* Tombol Daftar */}
             <a
-              href="https://forms.gle/BoeLK29RSLsZjQ7XA"
+              href="https://forms.gle/3iWTZ4th3wR4Emxe8"
               target="_blank"
               rel="noopener noreferrer"
               className="block mt-4 bg-green-500 text-white px-6 py-2 rounded-md text-center text-2xl"
