@@ -18,7 +18,7 @@ import BannerDetails from "./components/BannerDetails/BannerDetails";
 import FullGallery from "./components/Gallery/FullGallery";
 import ProfilLengkap from "./components/BannerDetails/ProfilLengkap";
 import Pembayaran from "./components/Pendaftaran/Pembayaran"; 
-import TontonVideo from "./components/Pendaftaran/TontonVideo";
+// import TontonVideo from "./components/Pendaftaran/TontonVideo";
 
 
 // Import assets
@@ -66,7 +66,7 @@ function App() {
       <Route path="/profil-lengkap" element={<ProfilLengkap />} />
       <Route path="/testimoni" element={<Testimoni />} />
       <Route path="/pembayaran" element={<Pembayaran />} />
-      <Route path="/tonton-video" element={<TontonVideo />} />
+      {/* <Route path="/tonton-video" element={<TontonVideo />} /> */}
     </Routes>
 
     {/* Footer */}
