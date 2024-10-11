@@ -65,7 +65,7 @@ const Pendaftaran = () => {
               Daftar SMP!
             </a>
             <a
-              href="https://forms.gle/3iWTZ4th3wR4Emxe8"
+              href="https://forms.gle/FxsCsmmDhJgpg5vF7"
               target="_blank"
               rel="noopener noreferrer"
               className="block mt-4 bg-blue-500 text-white px-6 py-2 rounded-md text-center text-2xl"
