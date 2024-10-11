@@ -69,7 +69,7 @@ const Navbar2 = () => {
               to="/testimoni"
               className={`text-lg font-semibold ${theme === "dark" ? "text-white" : "text-black"}`}
             >
-              Testimoni
+              Testimony
             </Link>
             <Link
               to="/info-terbaru"
