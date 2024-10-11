@@ -1,9 +1,11 @@
-// Pendaftaran.jsx
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import brosurImage1 from "/src/assets/brosurpps.jpg";
+import { Swiper, SwiperSlide } from "swiper/react"; // Menggunakan Swiper dan SwiperSlide
+import "swiper/css"; // Gaya dasar Swiper
+import "swiper/css/navigation"; // Jika menggunakan navigasi
+import "swiper/css/pagination"; // Jika menggunakan pagination
+import brosurImage1 from "/src/assets/brosurpps1.jpg";
+import brosurImage2 from "/src/assets/brosurpps2.jpg";
 import ImageModal from "./ImageModal";
-import { PlayIcon } from '@heroicons/react/24/solid';
 
 const Pendaftaran = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -26,8 +28,8 @@ const Pendaftaran = () => {
   return (
     <main className="bg-slate-100 dark:bg-slate-900 dark:text-white py-12 pt-40 mt-16 md:mb-50">
       {/* Judul Utama */}
-      <h3 className="text-center text-5xl font-bold mb-10 ">PPDB</h3>
-      <p className="text-center text-2xl font-bold mb-10 ">Tahun Ajaran 2025/2026</p>
+      <h3 className="text-center text-5xl font-bold mb-10">PPDB</h3>
+      <p className="text-center text-2xl font-bold mb-10">Tahun Ajaran 2025/2026</p>
       <h1 className="text-center text-5xl font-bold mb-10 underline">Sudah Dibuka</h1>
 
       <section className="container mx-auto px-4 flex flex-col md:flex-row gap-8">
@@ -35,16 +37,25 @@ const Pendaftaran = () => {
         <div className="w-full md:w-1/2 lg:w-1/2 shadow-lg rounded-lg overflow-hidden bg-white dark:bg-slate-800 mb-8 md:mb-0">
           <div className="p-4">
             <h2 className="text-3xl font-bold mb-4">Brosur Pendaftaran</h2>
-            {/* Gambar brosur */}
-            <div className="mb-4">
-              <img
-                src={brosurImage1}
-                alt="Brosur Pendaftaran"
-                className="w-full h-auto object-cover rounded-md cursor-pointer"
-                onClick={() => openModal(brosurImage1)}
-              />
-            </div>
-            {/* Tombol Daftar SMP */}
+            <Swiper spaceBetween={10} slidesPerView={1}>
+              <SwiperSlide>
+                <img
+                  src={brosurImage1}
+                  alt="Brosur Pendaftaran 1"
+                  className="w-full h-auto object-cover rounded-md cursor-pointer"
+                  onClick={() => openModal(brosurImage1)}
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src={brosurImage2}
+                  alt="Brosur Pendaftaran 2"
+                  className="w-full h-auto object-cover rounded-md cursor-pointer"
+                  onClick={() => openModal(brosurImage2)}
+                />
+              </SwiperSlide>
+            </Swiper>
+            {/* Tombol Daftar */}
             <a
               href="https://forms.gle/BoeLK29RSLsZjQ7XA"
               target="_blank"
@@ -53,7 +64,6 @@ const Pendaftaran = () => {
             >
               Daftar SMP!
             </a>
-            {/* Tombol Daftar SMA */}
             <a
               href="https://forms.gle/8DQuny3FH3oodHAS8"
               target="_blank"
@@ -66,8 +76,7 @@ const Pendaftaran = () => {
         </div>
 
         {/* Akordeon */}
-        {/* Akordeon */}
-<div className="w-full md:w-2/3 lg:w-2/3 max-w-4xl mx-auto">
+        <div className="w-full md:w-2/3 lg:w-2/3 max-w-4xl mx-auto">
   <div className="flex flex-col space-y-2">
     {/* Pendaftaran */}
     <div className="bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 p-3 rounded-md shadow-lg">
@@ -197,8 +206,7 @@ const Pendaftaran = () => {
       )}
     </div>
   </div>
-</div>
-
+</div>  
       </section>
 
       {/* Modal Gambar */}

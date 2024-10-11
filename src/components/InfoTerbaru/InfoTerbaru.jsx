@@ -6,7 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
 
-import infoImage1 from "/src/assets/brosurpps.jpg";
+import infoImage1 from "/src/assets/brosur.jpg";
 import infoImage2 from "/src/assets/BBM.jpg";
 import infoImage3 from "/src/assets/assestment nasional.jpg";
 import infoImage4 from "/src/assets/ACL.jpg";
