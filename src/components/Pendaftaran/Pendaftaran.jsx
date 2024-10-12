@@ -38,22 +38,29 @@ const Pendaftaran = () => {
           <div className="p-4">
             <h2 className="text-3xl font-bold mb-4">Brosur Pendaftaran</h2>
             <Swiper spaceBetween={10} slidesPerView={1}>
-              <SwiperSlide>
-                <img
-                  src={brosurImage1}
-                  alt="Brosur Pendaftaran 1"
-                  className="w-full h-auto object-cover rounded-md cursor-pointer"
-                  onClick={() => openModal(brosurImage1)}
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  src={brosurImage2}
-                  alt="Brosur Pendaftaran 2"
-                  className="w-full h-auto object-cover rounded-md cursor-pointer"
-                  onClick={() => openModal(brosurImage2)}
-                />
-              </SwiperSlide>
+            <SwiperSlide>
+  <div className="relative">
+    <img
+      src={brosurImage1}
+      alt="Brosur Pendaftaran 1"
+      className="w-full h-auto object-cover rounded-md cursor-pointer"
+      onClick={() => openModal(brosurImage1)}
+    />
+    {/* Tanda Geser di Pojok Kiri Bawah */}
+    <div className="absolute bottom-2 right-2 bg-gray-900 bg-opacity-50 text-white text-xl px-2 py-1 rounded-md">
+      Geser →
+    </div>
+  </div>
+</SwiperSlide>
+<SwiperSlide>
+  <img
+    src={brosurImage2}
+    alt="Brosur Pendaftaran 2"
+    className="w-full h-auto object-cover rounded-md cursor-pointer"
+    onClick={() => openModal(brosurImage2)}
+  />
+</SwiperSlide>
+
             </Swiper>
             {/* Tombol Daftar */}
             <a
