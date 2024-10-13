@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import heroImage1 from "/src/assets/futsal.jpg";
-import heroImage2 from "/src/assets/kenaikan-sabuk.jpg";
-import heroImage3 from "/src/assets/sholatJamaah.jpg";
-import heroImage4 from "/src/assets/hero-pondok1.jpeg";
-import heroImage5 from "/src/assets/hero-pondok3.jpeg";
-import heroImage6 from "/src/assets/paskibra.jpg";
-import heroImage7 from "/src/assets/sapala.jpg";
-import heroImage8 from "/src/assets/pergantian-osis.jpg";
-import heroImage9 from "/src/assets/rihlah-santri.jpg";
-import heroImage10 from "/src/assets/event-kejuaraan.jpg";
+import heroImage1 from "../../assets/futsal.jpg";
+import heroImage2 from "../../assets/kenaikan-sabuk.jpg";
+import heroImage3 from "../../assets/sholatJamaah.jpg";
+import heroImage4 from "../../assets/hero-pondok1.jpeg";
+import heroImage5 from "../../assets/hero-pondok3.jpeg";
+import heroImage6 from "../../assets/paskibra.jpg";
+import heroImage7 from "../../assets/sapala.jpg";
+import heroImage8 from "../../assets/pergantian-osis.jpg";
+import heroImage9 from "../../assets/rihlah-santri.jpg";
+import heroImage10 from "../../assets/event-kejuaraan.jpg";
 
 
 
