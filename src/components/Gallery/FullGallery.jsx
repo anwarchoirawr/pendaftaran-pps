@@ -6,10 +6,10 @@ import heroImage3 from "/src/assets/sholatJamaah.jpg";
 import heroImage4 from "/src/assets/hero-pondok1.jpeg";
 import heroImage5 from "/src/assets/hero-pondok3.jpeg";
 import heroImage6 from "/src/assets/paskibra.jpg";
-import heroImage7 from "/src/assets/SAPALA.jpg";
-import heroImage8 from "/src/assets/Pergantian osis.jpg";
-import heroImage9 from "/src/assets/rihlah santri.jpg";
-import heroImage10 from "/src/assets/Event Kejuaraan.jpg";
+import heroImage7 from "/src/assets/sapala.jpg";
+import heroImage8 from "/src/assets/pergantian-osis.jpg";
+import heroImage9 from "/src/assets/rihlah-santri.jpg";
+import heroImage10 from "/src/assets/event-kejuaraan.jpg";
 
 
 
