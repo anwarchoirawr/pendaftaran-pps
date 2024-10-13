@@ -6,10 +6,9 @@ import heroImage3 from "../../assets/sholatJamaah.jpg";
 import heroImage4 from "../../assets/hero-pondok1.jpeg";
 import heroImage5 from "../../assets/hero-pondok3.jpeg";
 import heroImage6 from "../../assets/paskibra.jpg";
-import heroImage7 from "../../assets/sapala.jpg"; // Sesuaikan path
-import heroImage8 from "../../assets/pergantian-osis.jpg";
-import heroImage9 from "../../assets/rihlah-santri.jpg";
-import heroImage10 from "../../assets/event-kejuaraan.jpg";
+import heroImage7 from "../../assets/pergantian-osis.jpg";
+import heroImage8 from "../../assets/rihlah-santri.jpg";
+import heroImage9 from "../../assets/event-kejuaraan.jpg";
 
 
 
@@ -24,10 +23,9 @@ const FullGallery = () => {
     { src: heroImage4, alt: "Gambar 4", description: "Kajian Rutin" },
     { src: heroImage5, alt: "Gambar 5", description: "Upacara" },
     { src: heroImage6, alt: "Gambar 5", description: "Paskibra" },
-    { src: heroImage7, alt: "Gambar 5", description: "SAPALA" },
-    { src: heroImage8, alt: "Gambar 5", description: "Pergantian OSIS" },
-    { src: heroImage9, alt: "Gambar 5", description: "Rihlah Santri" },
-    { src: heroImage10, alt: "Gambar 5", description: "Event Kejuaraam" },
+    { src: heroImage7, alt: "Gambar 5", description: "Pergantian OSIS" },
+    { src: heroImage8, alt: "Gambar 5", description: "Rihlah Santri" },
+    { src: heroImage9, alt: "Gambar 5", description: "Event Kejuaraam" },
 
   ];
 
