@@ -6,7 +6,7 @@ import heroImage3 from "../../assets/sholatJamaah.jpg";
 import heroImage4 from "../../assets/hero-pondok1.jpeg";
 import heroImage5 from "../../assets/hero-pondok3.jpeg";
 import heroImage6 from "../../assets/paskibra.jpg";
-import heroImage7 from "../../assets/sapala.jpg";
+import heroImage7 from "../../assets/sapala.jpg"; // Sesuaikan path
 import heroImage8 from "../../assets/pergantian-osis.jpg";
 import heroImage9 from "../../assets/rihlah-santri.jpg";
 import heroImage10 from "../../assets/event-kejuaraan.jpg";
