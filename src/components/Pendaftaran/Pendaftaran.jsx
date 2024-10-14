@@ -111,13 +111,13 @@ const Pendaftaran = () => {
       {activeIndex === 1 && (
         <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
           <p>Untuk pendaftaran online, ikuti langkah-langkah berikut: 1. Pilih Jenjang. 2. Registrasi & Input Berkas.
-            {/* <Link
-              to="/tonton-video"
-              className="block mt-4 flex items-center bg-red-500 text-white px-6 py-2 rounded-md text-center text-2xl"
-            >
-              <PlayIcon className="w-6 h-6 mr-2" />
-              TONTON LENGKAP CARA PENDAFTARAN ONLINE
-            </Link> */}
+              {/* <Link
+                to="/tonton-video"
+                className="block mt-4 flex items-center bg-red-500 text-white px-6 py-2 rounded-md text-center text-2xl"
+              >
+                <PlayIcon className="w-6 h-6 mr-2" />
+                TONTON LENGKAP CARA PENDAFTARAN ONLINE
+              </Link> */}
           </p>
         </div>
       )}
@@ -208,7 +208,7 @@ const Pendaftaran = () => {
       </button>
       {activeIndex === 7 && (
         <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
-          <p>Pengumuman hasil tes akan diumumkan 10 hari setelah tes dan diinformasikan melalui WhatsApp yang terdaftar serta Website kami.</p>
+          <p>Pengumuman hasil tes akan diumumkan 10 hari setelah tes dan diinformasikan melalui WhatsApp yang terdaftar.</p>
         </div>
       )}
     </div>
