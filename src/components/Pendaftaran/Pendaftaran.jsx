@@ -151,7 +151,7 @@ const Pendaftaran = () => {
            <p>
         Biaya pendaftaran: <strong>Rp 350.000</strong>. 
         Untuk 10 pendaftar pertama, biaya yang dikenakan hanya <strong>Rp 300.000</strong>. 
-        Informasi mengenai 10 pendaftar pertama akan dihapus secara otomatis setelah kuota terpenuhi.
+        <p><strong>Nb:</strong>Informasi mengenai 10 pendaftar pertama akan dihapus secara otomatis setelah kuota 10 pendaftar pertama terpenuhi.</p>
      </p>
      </div>
 
