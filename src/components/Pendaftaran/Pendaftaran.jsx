@@ -110,7 +110,7 @@ const Pendaftaran = () => {
       </button>
       {activeIndex === 1 && (
         <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
-          <p>Untuk pendaftaran online, ikuti langkah-langkah berikut: 1. Pilih Jenjang. 2. Registrasi & Input Berkas.
+          <p>Untuk pendaftaran online, ikuti langkah-langkah berikut: 1. Pilih Jenjang. 2. Registrasi & Input Berkas. 3.Gabung Grup Seleksi. .4.Selesai.
               {/* <Link
                 to="/tonton-video"
                 className="block mt-4 flex items-center bg-red-500 text-white px-6 py-2 rounded-md text-center text-2xl"
