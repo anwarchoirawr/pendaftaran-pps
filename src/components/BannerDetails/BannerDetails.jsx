@@ -44,7 +44,7 @@ const BannerDetails = ({ reverse = false }) => {
                 onClick={handleGetStartedClick} // Tambahkan event handler di sini
                 className="rounded-md border-2 border-primary bg-black px-4 py-2 text-sm text-white transition-colors duration-300 hover:bg-primary/80"
               >
-                Get Started
+                Selengkapnya
               </button>
             </div>
           </div>
