@@ -4,6 +4,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
+import walisantriImage from '/src/assets/walisantri.png'; // Import gambar
 
 const Testimoni = () => {
   const testimonies = [
@@ -23,11 +24,11 @@ const Testimoni = () => {
       text: "Mahasiswa Universitas Islam Madinah",
     },
     {
-      image: "./src/assets/walisantri.png", // URL gambar
+      image: walisantriImage, // Menggunakan import untuk gambar lokal
       name: "Wali Santri Angkatan 12",
-      text: "Sangat puas dengan perkembangan anak saya selama belajar di sini.",
+      text: "Alhamdulillah rekomended sekali anak saya pun mondok disitu",
     },
-   ];
+  ];
 
   return (
     <section className="container mx-auto py-8 px-4">
