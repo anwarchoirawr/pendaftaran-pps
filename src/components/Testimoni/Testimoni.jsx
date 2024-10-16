@@ -19,14 +19,19 @@ const Testimoni = () => {
     },
     {
       video: "https://www.youtube.com/embed/7ZSfXWvRB7k", // URL video embed
-      name: "Ibnu Taimiyah (Angkatan 2) ",
+      name: "Ibnu Taimiyah (Angkatan 2)",
       text: "Mahasiswa Universitas Islam Madinah",
     },
-  ];
+    {
+      image: "./src/assets/walisantri.png", // URL gambar
+      name: "Wali Santri Angkatan 12",
+      text: "Sangat puas dengan perkembangan anak saya selama belajar di sini.",
+    },
+   ];
 
   return (
     <section className="container mx-auto py-8 px-4">
-      <h2 className="text-center text-3xl font-bold mb-6 underline">Testimonials Alumni</h2>
+      <h2 className="text-center text-3xl font-bold mb-6 underline">Testimonials</h2>
       <Swiper
         spaceBetween={20}
         slidesPerView={1}
@@ -46,17 +51,27 @@ const Testimoni = () => {
             className={`flex justify-center ${index % 2 === 0 ? 'animate-flip-left' : 'animate-flip-right'}`}
           >
             <div className="bg-white dark:bg-slate-800 rounded-lg p-4 shadow-lg max-w-xs text-center min-h-[250px]">
-              <div className="w-full h-48 mb-4">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src={testimony.video}
-                  title={testimony.name}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
+              {testimony.video ? (
+                <div className="w-full h-48 mb-4">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src={testimony.video}
+                    title={testimony.name}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              ) : (
+                <div className="w-full h-48 mb-4">
+                  <img
+                    src={testimony.image}
+                    alt={testimony.name}
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                </div>
+              )}
               <h3 className="text-xl font-semibold mb-2">{testimony.name}</h3>
               <p className="text-gray-600 dark:text-gray-300">
                 {testimony.text}
