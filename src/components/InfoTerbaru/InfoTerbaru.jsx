@@ -9,7 +9,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import infoImage1 from "/src/assets/brosur.jpg";
 import infoImage2 from "/src/assets/BBM.jpg";
 import infoImage3 from "/src/assets/assestment nasional.jpg";
-import infoImage4 from "/src/assets/ACL.jpg";
+import infoImage4 from "/src/assets/harisantri.jpg";
 
 const InfoTerbaru = () => {
   const navigate = useNavigate();
@@ -18,7 +18,7 @@ const InfoTerbaru = () => {
     { src: infoImage1, alt: "Info 1", description: "Penerimaan Santri Baru", additionalText: "Tahun ajaran 2025/2026", isRegistration: true },
     { src: infoImage2, alt: "Info 2", description: "BBM", additionalText: "Bersih bersih masjid" },
     { src: infoImage3, alt: "Info 3", description: "Asesment Nasional", additionalText: "Jenjang Wustho" },
-    { src: infoImage4, alt: "Info 4", description: "Event Kejuaraan" , additionalText: "Alikhlas champion league" },
+    { src: infoImage4, alt: "Info 4", description: "Hari Santri" , additionalText: "Selamat Hari Santri" },
   ];
 
   const handleReadMore = (info) => {
@@ -26,13 +26,15 @@ const InfoTerbaru = () => {
       window.location.href = "https://ppsaalfurqon.ac.id/bersih-bersih-masjid-kampung/";
     } else if (info.description === "Asesment Nasional") {
       window.location.href = "https://www.facebook.com/photo/?fbid=1049206699962766&set=a.139065727643539";
+    } else if (info.description === "Hari Santri") {
+      window.location.href = "https://www.instagram.com/reel/DBdBKw0MnTL/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==";
     } else if (info.isRegistration) {
       navigate("/pendaftaran");
     } else {
       navigate("/info");
     }
   };
-
+  
   return (
     <main className="bg-white dark:bg-gray-900"> {/* Mengubah latar belakang utama untuk mendukung dark mode */}
       <section data-aos="fade-up" className="container py-8 md:py-12">
