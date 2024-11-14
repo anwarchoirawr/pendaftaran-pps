@@ -83,6 +83,13 @@ const Navbar2 = () => {
             >
               Pendaftaran
             </Link>
+            {/* Link untuk Fasilitas */}
+            <Link
+              to="/fasilitas"
+              className={`text-lg font-semibold ${theme === "dark" ? "text-white" : "text-black"}`}
+            >
+              Fasilitas
+            </Link>
           </nav>
           <div className="flex items-center space-x-4">
             {theme === "dark" ? (

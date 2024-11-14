@@ -19,6 +19,7 @@ import FullGallery from "./components/Gallery/FullGallery";
 import ProfilLengkap from "./components/BannerDetails/ProfilLengkap";
 import Pembayaran from "./components/Pendaftaran/Pembayaran"; 
 import TontonVideo from "./components/Pendaftaran/TontonVideo";
+import Fasilitas from "./components/Fasilitas/Fasilitas";
 
 // Import assets
 import Banner1 from "./assets/blog1.jpg";
@@ -51,12 +52,15 @@ function App() {
                 <Hero />
                 <Service />
                 <BannerDetails id="tentang-kami" reverse={true} img={Banner1} />
+                <Fasilitas />
                 <Gallery />
                 <Testimoni />
                 <InfoTerbaru />
               </>
             }
           />
+          <Route path="/fasilitas" element={<Fasilitas />} />
+
           <Route path="/gallery" element={<FullGallery />} />
           <Route path="/pendaftaran" element={<Pendaftaran />} />
           {/* <Route path="/formulir-smp" element={<FormulirSmp />} /> */}
