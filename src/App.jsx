@@ -20,6 +20,7 @@ import ProfilLengkap from "./components/BannerDetails/ProfilLengkap";
 import Pembayaran from "./components/Pendaftaran/Pembayaran"; 
 import TontonVideo from "./components/Pendaftaran/TontonVideo";
 import Fasilitas from "./components/Fasilitas/Fasilitas";
+import WhatsAppButton from "./components/WhatsAppButton/WhatsAppButton"
 
 // Import assets
 import Banner1 from "./assets/blog1.jpg";
@@ -56,6 +57,7 @@ function App() {
                 <Gallery />
                 <Testimoni />
                 <InfoTerbaru />
+                <WhatsAppButton />
               </>
             }
           />
