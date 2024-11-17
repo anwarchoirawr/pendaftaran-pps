@@ -5,7 +5,7 @@ import fasilitas2 from '../../assets/asrama.png';
 import fasilitas3 from '../../assets/labkomputer.png';
 import fasilitas4 from '../../assets/lapangan.png';
 // import fasilitas5 from '../../assets/bahasa.png';
-
+  
 const Fasilitas = () => {
   const [selectedFasilitas, setSelectedFasilitas] = useState(null);
 
