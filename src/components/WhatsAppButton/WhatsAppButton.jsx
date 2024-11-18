@@ -1,7 +1,7 @@
 import React from 'react';
 
 const WhatsAppButton = () => {
-  const whatsappNumber = "628123456789"; // Ganti dengan nomor admin
+  const whatsappNumber = "62895800086699"; // Ganti dengan nomor admin
   
   return (
     <div className="fixed bottom-4 right-4 flex items-center space-x-2">
