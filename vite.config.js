@@ -6,7 +6,7 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       css: {
-        additionalData: `@import "swiper/swiper-bundle.min.css";`,
+        additionalData: `@import "@/styles/global.css";`,
       },
     },
   },
