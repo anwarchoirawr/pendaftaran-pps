@@ -9,7 +9,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import infoImage1 from "/src/assets/brosur.jpg";
 import infoImage2 from "/src/assets/BBM.jpg";
 import infoImage3 from "/src/assets/assestment nasional.jpg";
-import infoImage4 from "/src/assets/harisantri.jpg";
+import infoImage4 from "/src/assets/renang.jpg";
 
 const InfoTerbaru = () => {
   const navigate = useNavigate();
@@ -18,7 +18,7 @@ const InfoTerbaru = () => {
     { src: infoImage1, alt: "Info 1", description: "Penerimaan Santri Baru", additionalText: "Tahun ajaran 2025/2026", isRegistration: true },
     { src: infoImage2, alt: "Info 2", description: "BBM", additionalText: "Bersih bersih masjid" },
     { src: infoImage3, alt: "Info 3", description: "Asesment Nasional", additionalText: "Jenjang Wustho" },
-    { src: infoImage4, alt: "Info 4", description: "Hari Santri" , additionalText: "Selamat Hari Santri" },
+    { src: infoImage4, alt: "Info 4", description: "Renang Santri" , additionalText: "Renang Bareng Seneng Bareng" },
   ];
 
   const handleReadMore = (info) => {
@@ -28,6 +28,8 @@ const InfoTerbaru = () => {
       window.location.href = "https://www.facebook.com/photo/?fbid=1049206699962766&set=a.139065727643539";
     } else if (info.description === "Hari Santri") {
       window.location.href = "https://www.instagram.com/reel/DBdBKw0MnTL/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==";
+    } else if (info.description === "Renang Santri") {
+      window.location.href = "https://www.instagram.com/reel/DCQ98SvM5JK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="; // Menambahkan URL Instagram untuk Renang Santri
     } else if (info.isRegistration) {
       navigate("/pendaftaran");
     } else {
