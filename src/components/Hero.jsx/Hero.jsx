@@ -7,16 +7,21 @@ import './typing-animation.css'; // Impor CSS dari folder yang sama
 
 const Hero = () => {
   const [displayedText, setDisplayedText] = useState("");
+  const [isMobile, setIsMobile] = useState(false); // State untuk mendeteksi perangkat
   const navigate = useNavigate();
-
+  
   const texts = [
     "Ahlan Wa Sahlan",
     "Di PPS AL-FURQON Magelang"
   ];
-
+  
   useEffect(() => {
     let textIndex = 0;
     let charIndex = 0;
+
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth <= 768); // Periksa ukuran layar
+    };
 
     const typeText = () => {
       if (textIndex < texts.length) {
@@ -39,8 +44,12 @@ const Hero = () => {
     };
 
     typeText();
-  }, []);
+    checkScreenSize(); // Deteksi ukuran layar pertama kali
+    window.addEventListener("resize", checkScreenSize);
 
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+  
   const handleNavigate = () => {
     navigate('/'); // Pergi ke halaman utama
     setTimeout(() => {
@@ -49,6 +58,13 @@ const Hero = () => {
         element.scrollIntoView({ behavior: 'smooth' });
       }
     }, 100); // Delay singkat untuk memastikan halaman sudah sepenuhnya dimuat
+  };
+
+  const handleScroll = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: "smooth",
+    });
   };
 
   return (
@@ -88,7 +104,7 @@ const Hero = () => {
               onClick={handleNavigate}
               className="bg-blue-500 text-white px-6 py-2 rounded-md font-semibold hover:bg-blue-600 transition-colors duration-300"
             >
-              Tentang Kami
+            Tentang Kami
             </button>
             <button
               onClick={() => navigate('/pendaftaran')}
@@ -99,6 +115,19 @@ const Hero = () => {
           </div>
         </div>
       </section>
+
+      {/* Scroll Button */}
+      {isMobile && (
+        <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce z-50">
+          <button
+            onClick={handleScroll}
+            className="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center shadow-md hover:bg-blue-600"
+          >
+            ↓
+          </button>
+          <span className="mt-2 text-white font-semibold text-sm">Scroll!</span>
+        </div>
+      )}
 
       <style jsx>{`
         @keyframes slide {
