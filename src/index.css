@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+  overflow-x: hidden; /* Mencegah scroll horizontal */
+  margin: 0; /* Pastikan margin dihapus untuk seluruh halaman */
+  padding: 0; /* Pastikan padding juga dihapus */
+}
+
 html {
   scroll-behavior: smooth;
 }
