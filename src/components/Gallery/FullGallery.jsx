@@ -6,6 +6,7 @@ import heroImage3 from "../../assets/sholatJamaah.jpg";
 import heroImage4 from "../../assets/hero-pondok1.jpeg";
 import heroImage5 from "../../assets/hero-pondok3.jpeg";
 import heroImage6 from "../../assets/paskibra.jpg";
+import heroImage7 from "../../assets/wisudaangkatan.jpg"
 
 
 
@@ -21,6 +22,7 @@ const FullGallery = () => {
     { src: heroImage4, alt: "Gambar 4", description: "Kajian Rutin" },
     { src: heroImage5, alt: "Gambar 5", description: "Upacara" },
     { src: heroImage6, alt: "Gambar 5", description: "Paskibra" },
+    { src: heroImage7, alt: "Gambar 5", description: "Wisuda Angkatan" },
     
 
   ];
