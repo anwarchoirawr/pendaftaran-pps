@@ -118,7 +118,7 @@ const Hero = () => {
 
       {/* Scroll Button */}
       {isMobile && (
-        <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce z-50">
+        <div className="fixed bottom-20 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce z-50">
           <button
             onClick={handleScroll}
             className="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center shadow-md hover:bg-blue-600"
