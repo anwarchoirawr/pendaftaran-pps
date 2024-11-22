@@ -3,24 +3,22 @@ import { useNavigate } from "react-router-dom";
 import heroImage1 from "/src/assets/hero-pondok1.jpeg";
 import heroImage2 from "/src/assets/hero-pondok2.jpg";
 import heroImage3 from "/src/assets/hero-pondok3.jpeg";
-import './typing-animation.css'; // Impor CSS dari folder yang sama
+import "./typing-animation.css";
 
 const Hero = () => {
   const [displayedText, setDisplayedText] = useState("");
-  const [isMobile, setIsMobile] = useState(false); // State untuk mendeteksi perangkat
+  const [isMobile, setIsMobile] = useState(false);
+  const [showScrollButton, setShowScrollButton] = useState(true); // Tambahkan state ini
   const navigate = useNavigate();
-  
-  const texts = [
-    "Ahlan Wa Sahlan",
-    "Di PPS AL-FURQON Magelang"
-  ];
-  
+
+  const texts = ["Ahlan Wa Sahlan", "Di PPS AL-FURQON Magelang"];
+
   useEffect(() => {
     let textIndex = 0;
     let charIndex = 0;
 
     const checkScreenSize = () => {
-      setIsMobile(window.innerWidth <= 768); // Periksa ukuran layar
+      setIsMobile(window.innerWidth <= 768);
     };
 
     const typeText = () => {
@@ -35,29 +33,44 @@ const Hero = () => {
             setTimeout(() => {
               setDisplayedText("");
               typeText();
-            }, 1000); // Delay antara teks
+            }, 1000);
           }
         } else {
-          setTimeout(typeText, 100); // Kecepatan mengetik
+          setTimeout(typeText, 100);
         }
       }
     };
 
-    typeText();
-    checkScreenSize(); // Deteksi ukuran layar pertama kali
-    window.addEventListener("resize", checkScreenSize);
+    const handleScroll = () => {
+      const footer = document.getElementById("footer"); // Pastikan ID footer sudah benar
+      if (footer) {
+        const footerTop = footer.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
 
-    return () => window.removeEventListener("resize", checkScreenSize);
-  }, []);
-  
-  const handleNavigate = () => {
-    navigate('/'); // Pergi ke halaman utama
-    setTimeout(() => {
-      const element = document.getElementById('tentang-kami');
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        // Sembunyikan tombol scroll jika bagian atas footer terlihat
+        setShowScrollButton(footerTop > windowHeight);
       }
-    }, 100); // Delay singkat untuk memastikan halaman sudah sepenuhnya dimuat
+    };
+
+    typeText();
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("resize", checkScreenSize);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const handleNavigate = () => {
+    navigate("/");
+    setTimeout(() => {
+      const element = document.getElementById("tentang-kami");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
   };
 
   const handleScroll = () => {
@@ -104,10 +117,10 @@ const Hero = () => {
               onClick={handleNavigate}
               className="bg-blue-500 text-white px-6 py-2 rounded-md font-semibold hover:bg-blue-600 transition-colors duration-300"
             >
-            Tentang Kami
+              Tentang Kami
             </button>
             <button
-              onClick={() => navigate('/pendaftaran')}
+              onClick={() => navigate("/pendaftaran")}
               className="bg-green-500 text-white px-6 py-2 rounded-md font-semibold hover:bg-green-600 transition-colors duration-300"
             >
               Daftar Sekarang
@@ -117,7 +130,7 @@ const Hero = () => {
       </section>
 
       {/* Scroll Button */}
-      {isMobile && (
+      {isMobile && showScrollButton && (
         <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce z-50">
           <button
             onClick={handleScroll}
@@ -131,19 +144,25 @@ const Hero = () => {
 
       <style jsx>{`
         @keyframes slide {
-          0% { transform: translateX(0); }
-          60% { transform: translateX(-100%); }
-          100% { transform: translateX(-100%); }
+          0% {
+            transform: translateX(0);
+          }
+          60% {
+            transform: translateX(-100%);
+          }
+          100% {
+            transform: translateX(-100%);
+          }
         }
         .animate-slide {
           animation: slide 24s infinite;
         }
         @media (max-width: 640px) {
           .text-5xl {
-            font-size: 2.5rem; /* Menyesuaikan ukuran font untuk perangkat kecil */
+            font-size: 2.5rem;
           }
           .max-w-2xl {
-            max-width: 90%; /* Mengatur lebar maksimum untuk perangkat kecil */
+            max-width: 90%;
           }
         }
       `}</style>

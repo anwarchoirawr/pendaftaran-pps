@@ -33,7 +33,7 @@ const ImportantLinks = [
 
 const Footer = () => {
   return (
-    <div className="bg-slate-950 text-white mt-14 rounded-t-3xl">
+    <div id="footer" className="footer bg-slate-950 text-white mt-14 rounded-t-3xl">
       <section className="container">
         <div className="grid md:grid-cols-3 py-5">
           {/* Company Details */}
