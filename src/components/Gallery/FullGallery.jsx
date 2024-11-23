@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import heroImage1 from "../../assets/futsal.jpg";
-import heroImage2 from "../../assets/kenaikan-sabuk.jpg";
-import heroImage3 from "../../assets/sholatJamaah.jpg";
-import heroImage4 from "../../assets/hero-pondok1.jpeg";
-import heroImage5 from "../../assets/hero-pondok3.jpeg";
-import heroImage6 from "../../assets/paskibra.jpg";
-import heroImage7 from "../../assets/wisudaangkatan.jpg"
-import heroImage8 from "../../assets/masak.png";
-import heroImage9 from "../../assets/kejuaraan.png"
-
+import heroImage1 from "../../assets/Gallery/futsal.webp";
+import heroImage2 from "../../assets/Gallery/kenaikan-sabuk.webp";
+import heroImage3 from "../../assets/Gallery/sholatJamaah.webp";
+import heroImage4 from "../../assets/Gallery/kajian.webp";
+import heroImage5 from "../../assets/Gallery/upacara.webp";
+import heroImage6 from "../../assets/Gallery/paskibra.webp";
+import heroImage7 from "../../assets/Gallery/wisudaangkatan.webp";
+import heroImage8 from "../../assets/Gallery/masak.webp";
+import heroImage9 from "../../assets/Gallery/kejuaraan.webp";
+import heroImage10 from "../../assets/Gallery/rihlah-santri.webp";
 
 
 
@@ -29,6 +29,8 @@ const FullGallery = () => {
     { src: heroImage7, alt: "Gambar 5", description: "Wisuda Angkatan" },
     { src: heroImage8, alt: "Gambar 5", description: "Masak Masak" },
     { src: heroImage9, alt: "Gambar 5", description: "Kejuraan" },
+    { src: heroImage10, alt: "Gambar 5", description: "rihlah" },
+
 
     
 

@@ -3,7 +3,7 @@ import { BiSolidSun, BiSolidMoon } from "react-icons/bi";
 import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
 import { Link, useNavigate } from "react-router-dom"; // Import useNavigate
 import ResponsiveMenu from "./ResponsiveMenu";
-import logo from "/src/assets/logo-pondok.png";
+import logo from "../../assets/logo/logo-pondok.webp";
 
 const Navbar2 = () => {
   const [theme, setTheme] = useState(

@@ -1,8 +1,8 @@
 import React from "react";
 import CountUp from "react-countup";
-import heroImage1 from "/src/assets/tahfidz.png";
-import heroImage2 from "/src/assets/mulazamah.png";
-import heroImage3 from "/src/assets/bahasa.png";
+import heroImage1 from "../../assets/servis/tahfidz.webp";
+import heroImage2 from "../../assets/servis/mulazamah.webp";
+import heroImage3 from "../../assets/servis/bahasa.webp";
 
 const Service = () => {
   return (

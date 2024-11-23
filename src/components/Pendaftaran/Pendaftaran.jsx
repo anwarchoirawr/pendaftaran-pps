@@ -3,8 +3,8 @@ import { Swiper, SwiperSlide } from "swiper/react"; // Menggunakan Swiper dan Sw
 import "swiper/css"; // Gaya dasar Swiper
 import "swiper/css/navigation"; // Jika menggunakan navigasi
 import "swiper/css/pagination"; // Jika menggunakan pagination
-import brosurImage1 from "/src/assets/brosurpps1.jpg"; // Pastikan path ini benar
-import brosurImage2 from "/src/assets/brosurpps2.jpg"; // Pastikan path ini benar
+import brosurImage1 from "/src/assets/brosurpps1.webp"; // Pastikan path ini benar
+import brosurImage2 from "/src/assets/brosurpps2.webp"; // Pastikan path ini benar
 import ImageModal from "./ImageModal";
 import { Link } from "react-router-dom";
 import { PlayIcon } from '@heroicons/react/24/solid'; // Pastikan menggunakan versi yang benar

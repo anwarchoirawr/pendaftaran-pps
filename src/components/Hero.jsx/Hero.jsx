@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import heroImage1 from "/src/assets/hero-pondok1.jpeg";
-import heroImage2 from "/src/assets/hero-pondok2.jpg";
-import heroImage3 from "/src/assets/hero-pondok3.jpeg";
+import heroImage1 from "../../assets/hero/hero-pondok1.webp";
+import heroImage2 from "../../assets/hero/hero-pondok2.webp";
+import heroImage3 from "../../assets/hero/hero-pondok3.webp";
 import "./typing-animation.css";
 
 const Hero = () => {

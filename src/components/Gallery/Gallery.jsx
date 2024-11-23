@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import heroImage1 from "/src/assets/futsal.jpg";
-import heroImage2 from "/src/assets/kenaikan-sabuk.jpg";
-import heroImage3 from "/src/assets/persahabatan.jpeg";
+import heroImage1 from "../../assets/Gallery/futsal.webp"
+import heroImage2 from "../../assets/Gallery/kenaikan-sabuk.webp"
+import heroImage3 from "../../assets/Gallery/persahabatan.webp"
 // import heroImage4 from "/src/assets/hero-pondok1.jpeg";
 // import heroImage5 from "/src/assets/hero-pondok3.jpeg";
 

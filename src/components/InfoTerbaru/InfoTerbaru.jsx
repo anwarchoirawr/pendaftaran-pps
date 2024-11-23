@@ -6,10 +6,10 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
 
-import infoImage1 from "/src/assets/brosur.jpg";
-import infoImage2 from "/src/assets/BBM.jpg";
-import infoImage3 from "/src/assets/assestment nasional.jpg";
-import infoImage4 from "/src/assets/renang.jpg";
+import infoImage1 from "../../assets/terbaru/brosur.webp";
+import infoImage2 from "../../assets/terbaru/BBM.webp";
+import infoImage3 from "../../assets/terbaru/assestment-nasional.webp";
+import infoImage4 from "../../assets/terbaru/renang.webp";
 
 const InfoTerbaru = () => {
   const navigate = useNavigate();

@@ -1,7 +1,7 @@
 import React from "react";
-import logo from "/src/assets/logo-pondok.png";
-import kampusSatuImage from "/src/assets/kampusSatuImage.jpg";
-import kampusDuaImage from "/src/assets/kampusDuaImage.jpg";
+import logo from "../../assets/logo/logo-pondok.webp";
+import kampusSatuImage from "/src/assets/kampusSatuImage.webp";
+import kampusDuaImage from "/src/assets/kampusDuaImage.webp";
 import {
   FaFacebook,
   FaInstagram,

@@ -1,9 +1,9 @@
 // components/Fasilitas.jsx
 import React, { useState } from 'react';
-import fasilitas1 from '../../assets/kantin.png';
-import fasilitas2 from '../../assets/asrama.png';
-import fasilitas3 from '../../assets/labkomputer.png';
-import fasilitas4 from '../../assets/lapangan.png';
+import fasilitas1 from '../../assets/fasilitas/kantin.webp';
+import fasilitas2 from '../../assets/fasilitas/asrama.webp';
+import fasilitas3 from '../../assets/fasilitas/labkomputer.webp';
+import fasilitas4 from '../../assets/fasilitas/lapangan.webp';
 // import fasilitas5 from '../../assets/bahasa.png';
   
 const Fasilitas = () => {
