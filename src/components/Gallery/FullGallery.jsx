@@ -7,6 +7,10 @@ import heroImage4 from "../../assets/hero-pondok1.jpeg";
 import heroImage5 from "../../assets/hero-pondok3.jpeg";
 import heroImage6 from "../../assets/paskibra.jpg";
 import heroImage7 from "../../assets/wisudaangkatan.jpg"
+import heroImage8 from "../../assets/masak.png";
+import heroImage9 from "../../assets/kejuaraan.png"
+
+
 
 
 
@@ -23,6 +27,9 @@ const FullGallery = () => {
     { src: heroImage5, alt: "Gambar 5", description: "Upacara" },
     { src: heroImage6, alt: "Gambar 5", description: "Paskibra" },
     { src: heroImage7, alt: "Gambar 5", description: "Wisuda Angkatan" },
+    { src: heroImage8, alt: "Gambar 5", description: "Masak Masak" },
+    { src: heroImage9, alt: "Gambar 5", description: "Kejuraan" },
+
     
 
   ];
