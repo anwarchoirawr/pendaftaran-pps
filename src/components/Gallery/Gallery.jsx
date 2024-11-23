@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import heroImage1 from "../../assets/Gallery/futsal.webp"
-import heroImage2 from "../../assets/Gallery/kenaikan-sabuk.webp"
-import heroImage3 from "../../assets/Gallery/persahabatan.webp"
+import heroImage1 from "../../assets/Gallery/futsal.webp";
+import heroImage2 from "../../assets/Gallery/kenaikan-sabuk.webp";
+import heroImage3 from "../../assets/Gallery/persahabatan.webp";
 // import heroImage4 from "/src/assets/hero-pondok1.jpeg";
 // import heroImage5 from "/src/assets/hero-pondok3.jpeg";
 
@@ -15,7 +15,7 @@ const Gallery = () => {
     { src: heroImage2, alt: "Kenaikan Sabuk", description: "Kenaikan sabuk" },
     { src: heroImage3, alt: "Gambar 3", description: "Persahabatan" },
     // { src: heroImage4, alt: "Gambar 4", description: "kajian" },
-    //  { src: heroImage5, alt: "Gambar 4", description: "Upacara" },
+    // { src: heroImage5, alt: "Gambar 4", description: "Upacara" },
   ];
 
   const openModal = (image) => {
@@ -47,6 +47,7 @@ const Gallery = () => {
                 <img
                   src={image.src}
                   alt={image.alt}
+                  loading="lazy" // Lazy-loading ditambahkan di sini
                   className="rounded-lg w-full"
                   data-aos={`flip-${index % 2 === 0 ? "left" : "right"}`}
                   data-aos-duration="800"
@@ -93,6 +94,7 @@ const Gallery = () => {
             <img
               src={selectedImage.src}
               alt={selectedImage.alt}
+              loading="lazy" // Lazy-loading ditambahkan di sini
               className="max-w-full max-h-screen rounded-lg"
             />
           </div>

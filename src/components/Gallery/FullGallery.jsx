@@ -11,10 +11,6 @@ import heroImage8 from "../../assets/Gallery/masak.webp";
 import heroImage9 from "../../assets/Gallery/kejuaraan.webp";
 import heroImage10 from "../../assets/Gallery/rihlah-santri.webp";
 
-
-
-
-
 const FullGallery = () => {
   const navigate = useNavigate();
   const [selectedImage, setSelectedImage] = useState(null);
@@ -25,15 +21,11 @@ const FullGallery = () => {
     { src: heroImage3, alt: "Gambar 3", description: "Sholat Jamaah Santri Ulya" },
     { src: heroImage4, alt: "Gambar 4", description: "Kajian Rutin" },
     { src: heroImage5, alt: "Gambar 5", description: "Upacara" },
-    { src: heroImage6, alt: "Gambar 5", description: "Paskibra" },
-    { src: heroImage7, alt: "Gambar 5", description: "Wisuda Angkatan" },
-    { src: heroImage8, alt: "Gambar 5", description: "Masak Masak" },
-    { src: heroImage9, alt: "Gambar 5", description: "Kejuraan" },
-    { src: heroImage10, alt: "Gambar 5", description: "rihlah" },
-
-
-    
-
+    { src: heroImage6, alt: "Gambar 6", description: "Paskibra" },
+    { src: heroImage7, alt: "Gambar 7", description: "Wisuda Angkatan" },
+    { src: heroImage8, alt: "Gambar 8", description: "Masak Masak" },
+    { src: heroImage9, alt: "Gambar 9", description: "Kejuaraan" },
+    { src: heroImage10, alt: "Gambar 10", description: "Rihlah" },
   ];
 
   const handleBack = () => {
@@ -70,6 +62,7 @@ const FullGallery = () => {
                   src={image.src}
                   alt={image.alt}
                   className="rounded-lg w-full"
+                  loading="lazy" // Lazy loading
                 />
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">

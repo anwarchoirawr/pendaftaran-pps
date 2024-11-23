@@ -38,7 +38,12 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 py-5">
           {/* Company Details */}
           <div className="py-8 px-4">
-            <img src={logo} alt="Logo" className="h-[80px] w-auto mb-3" />
+            <img
+              src={logo}
+              alt="Logo"
+              className="h-[80px] w-auto mb-3"
+              loading="lazy"
+            />
             <p className="text-sm">
               Ikuti kami untuk mendapatkan update terbaru. Syukron Jazakumullahu
               khairan katsiran. Semoga Allah Ta’ala memberikan kemudahan.
@@ -126,6 +131,7 @@ const Footer = () => {
                       src={kampusSatuImage}
                       alt="Kampus Satu"
                       className="w-full h-auto rounded-lg"
+                      loading="lazy"
                     />
                     <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <p className="text-white text-lg">Klik link map!</p>
@@ -143,6 +149,7 @@ const Footer = () => {
                       src={kampusDuaImage}
                       alt="Kampus Dua"
                       className="w-full h-auto rounded-lg"
+                      loading="lazy"
                     />
                     <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <p className="text-white text-lg">Klik link map!</p>

@@ -18,7 +18,7 @@ const InfoTerbaru = () => {
     { src: infoImage1, alt: "Info 1", description: "Penerimaan Santri Baru", additionalText: "Tahun ajaran 2025/2026", isRegistration: true },
     { src: infoImage2, alt: "Info 2", description: "BBM", additionalText: "Bersih bersih masjid" },
     { src: infoImage3, alt: "Info 3", description: "Asesment Nasional", additionalText: "Jenjang Wustho" },
-    { src: infoImage4, alt: "Info 4", description: "Renang Santri" , additionalText: "Renang Bareng Seneng Bareng" },
+    { src: infoImage4, alt: "Info 4", description: "Renang Santri", additionalText: "Renang Bareng Seneng Bareng" },
   ];
 
   const handleReadMore = (info) => {
@@ -29,16 +29,16 @@ const InfoTerbaru = () => {
     } else if (info.description === "Hari Santri") {
       window.location.href = "https://www.instagram.com/reel/DBdBKw0MnTL/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==";
     } else if (info.description === "Renang Santri") {
-      window.location.href = "https://www.instagram.com/reel/DCQ98SvM5JK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="; // Menambahkan URL Instagram untuk Renang Santri
+      window.location.href = "https://www.instagram.com/reel/DCQ98SvM5JK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==";
     } else if (info.isRegistration) {
       navigate("/pendaftaran");
     } else {
       navigate("/info");
     }
   };
-  
+
   return (
-    <main className="bg-white dark:bg-gray-900"> {/* Mengubah latar belakang utama untuk mendukung dark mode */}
+    <main className="bg-white dark:bg-gray-900">
       <section data-aos="fade-up" className="container py-8 md:py-12">
         <h2 className="text-2xl font-bold text-center lg:text-left text-black dark:text-white md:text-4xl lg:text-5xl md:ml-10 mb-6 underline">
           Berita Terbaru
@@ -60,7 +60,6 @@ const InfoTerbaru = () => {
             {infos.map((info, index) => (
               <SwiperSlide key={index} className="relative group">
                 <div className="relative rounded-lg overflow-hidden bg-white dark:bg-gray-800 shadow-lg transition-transform duration-300 transform group-hover:scale-105">
-                  {/* Stiker New! */}
                   <div className="absolute top-0 right-0 m-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded-full">
                     New!
                   </div>
@@ -68,6 +67,7 @@ const InfoTerbaru = () => {
                     src={info.src}
                     alt={info.alt}
                     className="rounded-t-lg w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                    loading="lazy" // Lazy loading untuk gambar
                   />
                   <div className="p-4">
                     <p className="text-gray-700 dark:text-gray-300 mb-2">

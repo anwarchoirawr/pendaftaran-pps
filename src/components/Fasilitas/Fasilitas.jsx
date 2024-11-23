@@ -5,7 +5,7 @@ import fasilitas2 from '../../assets/fasilitas/asrama.webp';
 import fasilitas3 from '../../assets/fasilitas/labkomputer.webp';
 import fasilitas4 from '../../assets/fasilitas/lapangan.webp';
 // import fasilitas5 from '../../assets/bahasa.png';
-  
+
 const Fasilitas = () => {
   const [selectedFasilitas, setSelectedFasilitas] = useState(null);
 
@@ -42,6 +42,7 @@ const Fasilitas = () => {
                 <img
                   src={fasilitas.src}
                   alt={fasilitas.alt}
+                  loading="lazy" // Tambahkan lazy-loading di sini
                   className="rounded-lg w-full h-auto object-cover sm:h-64 md:h-64 lg:h-64"
                   data-aos={`flip-${index % 2 === 0 ? "left" : "right"}`}
                   data-aos-duration="800"
@@ -76,6 +77,7 @@ const Fasilitas = () => {
             <img
               src={selectedFasilitas.src}
               alt={selectedFasilitas.alt}
+              loading="lazy" // Tambahkan lazy-loading di sini
               className="max-w-full max-h-screen rounded-lg"
             />
           </div>

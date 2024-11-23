@@ -13,19 +13,34 @@ const Service = () => {
         </h2>
         <div className="grid grid-cols-2 divide-x divide-slate-700 dark:divide-gray-700 md:grid-cols-4">
           <div className="flex flex-col items-center justify-center p-2">
-            <img src={heroImage1} alt="tahfidz" className="w-12 h-auto mb-2" />
+            <img
+              src={heroImage1}
+              alt="tahfidz"
+              loading="lazy" // Tambahkan lazy-loading di sini
+              className="w-12 h-auto mb-2"
+            />
             <h1 className="text-xs font-semibold text-center sm:text-md md:text-lg">
               Tahfidz & Sanad
             </h1>
           </div>
           <div className="flex flex-col items-center justify-center p-2">
-            <img src={heroImage2} alt="Mulazamah" className="w-12 h-auto mb-2" />
+            <img
+              src={heroImage2}
+              alt="Mulazamah"
+              loading="lazy" // Tambahkan lazy-loading di sini
+              className="w-12 h-auto mb-2"
+            />
             <h1 className="text-xs font-semibold text-center sm:text-md md:text-lg">
               Mulazamah
             </h1>
           </div>
           <div className="flex flex-col items-center justify-center p-2">
-            <img src={heroImage3} alt="Bahasa" className="w-12 h-auto mb-2" />
+            <img
+              src={heroImage3}
+              alt="Bahasa"
+              loading="lazy" // Tambahkan lazy-loading di sini
+              className="w-12 h-auto mb-2"
+            />
             <h1 className="text-xs font-semibold text-center sm:text-md md:text-lg">
               Bahasa
             </h1>

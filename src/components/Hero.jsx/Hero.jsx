@@ -84,18 +84,34 @@ const Hero = () => {
     <main className="relative h-screen bg-black">
       {/* Slider Section */}
       <section className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
-        <div className="hero-slider flex w-[300%] h-full animate-slide">
-          <div className="flex-shrink-0 w-full h-full">
-            <img src={heroImage1} alt="Hero 1" className="w-full h-full object-cover" />
-          </div>
-          <div className="flex-shrink-0 w-full h-full">
-            <img src={heroImage2} alt="Hero 2" className="w-full h-full object-cover" />
-          </div>
-          <div className="flex-shrink-0 w-full h-full">
-            <img src={heroImage3} alt="Hero 3" className="w-full h-full object-cover" />
-          </div>
-        </div>
-      </section>
+  <div className="hero-slider flex w-[300%] h-full animate-slide">
+    <div className="flex-shrink-0 w-full h-full">
+      <img
+        src={heroImage1}
+        alt="Hero 1"
+        loading="lazy" // Tambahkan lazy-loading di sini
+        className="w-full h-full object-cover"
+      />
+    </div>
+    <div className="flex-shrink-0 w-full h-full">
+      <img
+        src={heroImage2}
+        alt="Hero 2"
+        loading="lazy" // Tambahkan lazy-loading di sini
+        className="w-full h-full object-cover"
+      />
+    </div>
+    <div className="flex-shrink-0 w-full h-full">
+      <img
+        src={heroImage3}
+        alt="Hero 3"
+        loading="lazy" // Tambahkan lazy-loading di sini
+        className="w-full h-full object-cover"
+      />
+    </div>
+  </div>
+</section>
+
 
       {/* Content Section */}
       <section className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white bg-black bg-opacity-40 px-4">
