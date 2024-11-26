@@ -80,6 +80,7 @@ const ProfilLengkap = () => {
                 <h2 className="text-2xl font-semibold mb-4">Program Pondok Pesantren</h2>
                 <ul className="list-disc list-inside">
                     <li>Wajib asrama bagi seluruh santri.</li>
+                    <li>Kurikulum Terpadu Berbasis Kemenag dan Muatan Pesantren</li>
                     <li>Pendidikan Kesetaraan Pondok Pesantren Salafiyah Wustha atau setingkat SMP.</li>
                     <li>Pendidikan Kesetaraan Pondok Pesantren Salafiyah Ulya atau setingkat SMA.</li>
                     <li>Tahsin, Tahfizh dan Tasmi’ Al Qur’an.</li>
@@ -88,7 +89,7 @@ const ProfilLengkap = () => {
                     <li>Pengajian Kitab Kuning.</li>
                     <li>Belajar Alat (Nahwu, Shorof, Muthola’ah, Balaghoh, dll).</li>
                     <li>Belajar Tata Bahasa Arab.</li>
-                    <li>Ekstrakulikuler Olahraga dan Beladiri.</li>
+                    <li>Ekstrakulikuler Olahraga,Beladiri,Pidato,SAPALA,Dasar-dasar IT.</li>
                   
                 </ul>
             </section>
