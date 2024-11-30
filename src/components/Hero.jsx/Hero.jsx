@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import heroImage1 from "../../assets/hero/hero-pondok1.webp";
 import heroImage2 from "../../assets/hero/hero-pondok2.webp";
-import heroImage3 from "../../assets/hero/hero-pondok3.webp";
 import "./typing-animation.css";
 
 const Hero = () => {
@@ -77,27 +75,11 @@ const Hero = () => {
     <main className="relative h-screen bg-black">
       {/* Slider Section */}
       <section className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
-        <div className="hero-slider flex w-[300%] h-full animate-slide">
-          <div className="flex-shrink-0 w-full h-full">
-            <img
-              src={heroImage1}
-              alt="Hero 1"
-              loading="lazy"
-              className="w-full h-full object-cover"
-            />
-          </div>
+        <div className="hero-slider w-[200%] h-full animate-slide">
           <div className="flex-shrink-0 w-full h-full">
             <img
               src={heroImage2}
               alt="Hero 2"
-              loading="lazy"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="flex-shrink-0 w-full h-full">
-            <img
-              src={heroImage3}
-              alt="Hero 3"
               loading="lazy"
               className="w-full h-full object-cover"
             />
@@ -155,15 +137,15 @@ const Hero = () => {
           0% {
             transform: translateX(0);
           }
-          60% {
-            transform: translateX(-100%);
+          50% {
+            transform: translateX(-50%);
           }
           100% {
-            transform: translateX(-100%);
+            transform: translateX(0);
           }
         }
         .animate-slide {
-          animation: slide 24s infinite;
+          animation: slide 12s infinite;
         }
         @media (max-width: 640px) {
           .text-5xl {
