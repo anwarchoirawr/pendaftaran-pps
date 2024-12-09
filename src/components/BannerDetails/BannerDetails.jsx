@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom"; // Import useNavigate
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import infoVideo from "../../assets/terbaru/pondoktahfidjateng.mp4"; // Import video lokal
+
 const BannerDetails = ({ reverse = false }) => {
   const navigate = useNavigate(); // Inisialisasi useNavigate
 
@@ -56,14 +58,14 @@ const BannerDetails = ({ reverse = false }) => {
             data-aos-once="true"
             className="order-1 md:pl-9"
           >
-            <iframe
+            <video
+              controls
               className="aspect-video w-full"
-              src="https://www.youtube.com/embed/z6g_lh2OAnw"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
+              aria-label="Video tentang pondok pesantren"
+            >
+              <source src={infoVideo} type="video/mp4" />
+              Browser Anda tidak mendukung tag video.
+            </video>
           </div>
         </div>
       </section>
@@ -79,7 +81,7 @@ const BannerDetails = ({ reverse = false }) => {
           >
             <h2 className="text-3xl font-bold mb-4">01. Kenapa PPS AL-FURQON</h2>
             <p className="text-slate-600 dark:text-slate-400 text-lg">
-        Mendidik dengan Adab, Membibing dengan Ilmu.
+              Mendidik dengan Adab, Membibing dengan Ilmu.
             </p>
           </div>
 
@@ -90,9 +92,8 @@ const BannerDetails = ({ reverse = false }) => {
             className="text-center md:text-left"
           >
             <h2 className="text-3xl font-bold mb-4 md:pl-9">02. VISI</h2>
-            <p className="text-slate-600 dark:text-slate-400 md:pl-9  text-lg">
-            <p className="mb-2">Mencetak generasi yang hafizh, berakhlak mulia, beraqidah lurus dan siap berdakwah di masyarakat.</p>
-          
+            <p className="text-slate-600 dark:text-slate-400 md:pl-9 text-lg">
+              <p className="mb-2">Mencetak generasi yang hafizh, berakhlak mulia, beraqidah lurus dan siap berdakwah di masyarakat.</p>
             </p>
           </div>
 
@@ -102,13 +103,15 @@ const BannerDetails = ({ reverse = false }) => {
             data-aos-duration="800"
             className="text-center md:text-left"
           >
-            <h2 className="text-xl font-semibold"> <b>03. MISI </b></h2>
-                <ul className="list-disc list-inside">
-                    <li>Menanamkan Aqidah yang benar dan menerapkan dalam kehidupan sehari-hari.</li>
-                    <li>Menciptakan lingkungan yang qur'ani .</li>
-                    <li>Menumbuhkan karakter "budi pakerti".</li>
-                    <li>Membiasakan adab-adab Islami dalam kehidupan sehari-hari terhadap teman,guru, dan seluruh civitas di dalam ma'had serta masyarakat di luar ma'had.</li>
-                </ul>
+            <h2 className="text-xl font-semibold">
+              <b>03. MISI</b>
+            </h2>
+            <ul className="list-disc list-inside">
+              <li>Menanamkan Aqidah yang benar dan menerapkan dalam kehidupan sehari-hari.</li>
+              <li>Menciptakan lingkungan yang qur'ani.</li>
+              <li>Menumbuhkan karakter "budi pakerti".</li>
+              <li>Membiasakan adab-adab Islami dalam kehidupan sehari-hari terhadap teman, guru, dan seluruh civitas di dalam ma'had serta masyarakat di luar ma'had.</li>
+            </ul>
           </div>
         </div>
       </section>
