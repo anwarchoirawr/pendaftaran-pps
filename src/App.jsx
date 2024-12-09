@@ -55,6 +55,7 @@ function App() {
                 <BannerDetails id="tentang-kami" reverse={true} img={Banner1} />
                 <Fasilitas />
                 <Gallery />
+                
                 <Testimoni />
                 <InfoTerbaru />
                 <WhatsAppButton />

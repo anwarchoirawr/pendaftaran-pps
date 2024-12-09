@@ -32,7 +32,7 @@ const Testimoni = () => {
 
   return (
     <section className="container mx-auto py-8 px-4">
-      <h2 className="text-center text-3xl font-bold mb-6 underline">Testimonials</h2>
+      <h2 className="text-center text-3xl font-bold mb-6 underline">Sapa Alumni</h2>
       <Swiper
         spaceBetween={20}
         slidesPerView={1}

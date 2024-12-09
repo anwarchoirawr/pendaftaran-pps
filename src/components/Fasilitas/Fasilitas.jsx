@@ -29,7 +29,7 @@ const Fasilitas = () => {
     <main className="bg-gray-100 pt-16 pb-8">
       <section className="container py-8 md:py-12 mt-16">
         <h2 className="text-2xl font-bold text-center text-gray-800 md:text-4xl lg:text-5xl mb-6 underline">
-          Fasilitas Kami
+          Fasilitas
         </h2>
         <div className="p-3 md:p-10">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:place-items-center">

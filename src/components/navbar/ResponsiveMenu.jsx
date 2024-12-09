@@ -51,7 +51,7 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
               onClick={() => handleLinkClick("/testimoni", "")}
               className="mb-5 inline-block hover:text-gray-400 transition-colors duration-300"
             >
-              Testimoni
+              Sapa Alumni
             </Link>
           </li>
           <li>
