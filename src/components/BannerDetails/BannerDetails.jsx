@@ -3,8 +3,6 @@ import { useNavigate } from "react-router-dom"; // Import useNavigate
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import infoVideo from "../../assets/terbaru/pondoktahfidjateng.mp4"; // Import video lokal
-
 const BannerDetails = ({ reverse = false }) => {
   const navigate = useNavigate(); // Inisialisasi useNavigate
 
@@ -13,11 +11,14 @@ const BannerDetails = ({ reverse = false }) => {
   }, []);
 
   const handleGetStartedClick = () => {
-    navigate('/profil-lengkap'); // Mengarahkan ke ProfilLengkap.jsx
+    navigate("/profil-lengkap"); // Mengarahkan ke ProfilLengkap.jsx
   };
 
   return (
-    <main id="tentang-kami" className="bg-slate-100 dark:bg-slate-900 dark:text-white md:py-20">
+    <main
+      id="tentang-kami"
+      className="bg-slate-100 dark:bg-slate-900 dark:text-white md:py-20"
+    >
       {/* Bagian Utama */}
       <section className="container flex flex-col items-center justify-center py-10 md:h-[500px] px-4 md:px-0">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
@@ -25,7 +26,6 @@ const BannerDetails = ({ reverse = false }) => {
           <div
             data-aos="fade-right"
             data-aos-duration="400"
-            data-aos-once="true"
             className={`flex flex-col items-center gap-4 text-center md:items-start md:p-8 md:text-left ${
               reverse ? "md:order-last" : ""
             }`}
@@ -33,13 +33,13 @@ const BannerDetails = ({ reverse = false }) => {
             <h1 className="text-2xl font-bold text-center md:text-4xl lg:text-5xl mb-6 underline">
               Tentang Kami
             </h1>
-            <p className="text-sm text-slate-600 dark:text-slate-400 text-base">
-              Pondok Pesantren Salafiyah Al Furqon adalah Lembaga Pendidikan
-              di bawah naungan Yayasan Islam Al Furqon Magelang (Ustadz
-              Muhammad Wujud). Kampus 1 berada di Jl. Tembus Blabak – Boyolali,
-              Km. 11, Kompleks Masjid Jami’ Al Ikhlash, Dusun Tlatar, Krogowanan,
-              Sawangan, Magelang. Kampus 2 berada di Dusun Bulu Kidul, Podosoko,
-              Sawangan, Magelang.
+            <p className="text-base text-slate-600 dark:text-slate-400">
+              Pondok Pesantren Salafiyah Al Furqon adalah Lembaga Pendidikan di
+              bawah naungan Yayasan Islam Al Furqon Magelang (Ustadz Muhammad
+              Wujud). Kampus 1 berada di Jl. Tembus Blabak – Boyolali, Km. 11,
+              Kompleks Masjid Jami’ Al Ikhlash, Dusun Tlatar, Krogowanan,
+              Sawangan, Magelang. Kampus 2 berada di Dusun Bulu Kidul,
+              Podosoko, Sawangan, Magelang.
             </p>
             <div className="space-x-4">
               <button
@@ -55,17 +55,16 @@ const BannerDetails = ({ reverse = false }) => {
           <div
             data-aos="fade-left"
             data-aos-duration="800"
-            data-aos-once="true"
             className="order-1 md:pl-9"
           >
-            <video
-              controls
+            <iframe
               className="aspect-video w-full"
-              aria-label="Video tentang pondok pesantren"
-            >
-              <source src={infoVideo} type="video/mp4" />
-              Browser Anda tidak mendukung tag video.
-            </video>
+              src="https://www.youtube.com/embed/z6g_lh2OAnw"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       </section>
@@ -73,15 +72,15 @@ const BannerDetails = ({ reverse = false }) => {
       {/* Bagian Tambahan */}
       <section className="container mx-auto py-8 px-4 md:px-0">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {/* 01 - Kenapa Ma'had As-Surkati */}
+          {/* 01 - Kenapa PPS AL-FURQON */}
           <div
             data-aos="fade-up"
             data-aos-duration="800"
             className="text-center md:text-left"
           >
             <h2 className="text-3xl font-bold mb-4">01. Kenapa PPS AL-FURQON</h2>
-            <p className="text-slate-600 dark:text-slate-400 text-lg">
-              Mendidik dengan Adab, Membibing dengan Ilmu.
+            <p className="text-lg text-slate-600 dark:text-slate-400">
+              Mendidik dengan Adab, Membimbing dengan Ilmu.
             </p>
           </div>
 
@@ -92,8 +91,9 @@ const BannerDetails = ({ reverse = false }) => {
             className="text-center md:text-left"
           >
             <h2 className="text-3xl font-bold mb-4 md:pl-9">02. VISI</h2>
-            <p className="text-slate-600 dark:text-slate-400 md:pl-9 text-lg">
-              <p className="mb-2">Mencetak generasi yang hafizh, berakhlak mulia, beraqidah lurus dan siap berdakwah di masyarakat.</p>
+            <p className="mb-2 text-lg text-slate-600 dark:text-slate-400 md:pl-9">
+              Mencetak generasi yang hafizh, berakhlak mulia, beraqidah lurus, dan
+              siap berdakwah di masyarakat.
             </p>
           </div>
 
@@ -106,11 +106,14 @@ const BannerDetails = ({ reverse = false }) => {
             <h2 className="text-xl font-semibold">
               <b>03. MISI</b>
             </h2>
-            <ul className="list-disc list-inside">
+            <ul className="list-disc list-inside text-slate-600 dark:text-slate-400">
               <li>Menanamkan Aqidah yang benar dan menerapkan dalam kehidupan sehari-hari.</li>
-              <li>Menciptakan lingkungan yang qur'ani.</li>
-              <li>Menumbuhkan karakter "budi pakerti".</li>
-              <li>Membiasakan adab-adab Islami dalam kehidupan sehari-hari terhadap teman, guru, dan seluruh civitas di dalam ma'had serta masyarakat di luar ma'had.</li>
+              <li>Menciptakan lingkungan yang Qur'ani.</li>
+              <li>Menumbuhkan karakter "budi pekerti".</li>
+              <li>
+                Membiasakan adab-adab Islami dalam kehidupan sehari-hari terhadap teman, guru,
+                seluruh civitas di dalam ma'had, serta masyarakat di luar ma'had.
+              </li>
             </ul>
           </div>
         </div>
