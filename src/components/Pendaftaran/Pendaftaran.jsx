@@ -155,9 +155,6 @@ const Pendaftaran = () => {
         <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
           <p>
             Biaya pendaftaran: <strong>Rp 350.000</strong>.
-            Untuk 10 pendaftar pertama, biaya yang dikenakan hanya <strong>Rp 300.000</strong>.
-            <br />
-            <strong>Nb:</strong> Informasi mengenai 10 pendaftar pertama akan dihapus secara otomatis setelah kuota 10 pendaftar pertama terpenuhi.
           </p>
         </div>
       )}
