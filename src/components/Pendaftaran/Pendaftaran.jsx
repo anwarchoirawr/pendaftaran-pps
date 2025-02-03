@@ -170,7 +170,7 @@ const Pendaftaran = () => {
       </button>
       {activeIndex === 4 && (
         <div className="bg-gray-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 p-2 rounded-md mt-2 max-h-32 overflow-y-auto">
-          <p>Gelombang 1 (12 Oktober 2024 - 31 Januari 2025), Gelombang 2 akan dibuka apabila kuota belum terpenuhi.</p>
+          <p>Gelombang 2 (1 Febuari 2025 - Quota Terpenuhi).</p>
         </div>
       )}
     </div>
