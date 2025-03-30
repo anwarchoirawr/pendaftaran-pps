@@ -8,22 +8,21 @@ import { Navigation, Pagination } from "swiper/modules";
 
 import infoImage1 from "../../assets/terbaru/brosur.webp";
 import infoVideo from "../../assets/terbaru/pondoktahfidjateng.mp4"; // Path ke video
-import infoImage2 from "../../assets/terbaru/BBM.webp";
+import infoImage2 from "../../assets/terbaru/naskahkhutbah.webp"; // Ganti dengan gambar yang sesuai
 import infoImage3 from "../../assets/terbaru/assestment-nasional.webp";
-
 
 const InfoTerbaru = () => {
   const navigate = useNavigate();
 
   const infos = [
     { src: infoImage1, alt: "Info 1", description: "Penerimaan Santri Baru", additionalText: "Tahun ajaran 2025/2026", isRegistration: true },
-    { src: infoImage2, alt: "Info 2", description: "BBM", additionalText: "Bersih bersih masjid" },
+    { src: infoImage2, alt: "Info 2", description: "Naskah Khutbah", additionalText: "Kumpulan naskah khutbah" },
     { src: infoImage3, alt: "Info 3", description: "Asesment Nasional", additionalText: "Jenjang Wustho" },
   ];
 
   const handleReadMore = (info) => {
-    if (info.description === "BBM") {
-      window.location.href = "https://ppsaalfurqon.ac.id/bersih-bersih-masjid-kampung/";
+    if (info.description === "Naskah Khutbah") {
+      window.location.href = "https://ppsaalfurqon.ac.id/category/naskah-khutbah/";
     } else if (info.description === "Asesment Nasional") {
       window.location.href = "https://www.facebook.com/photo/?fbid=1049206699962766&set=a.139065727643539";
     } else if (info.isRegistration) {
